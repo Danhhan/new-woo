@@ -294,7 +294,7 @@ export const RoadmapSection: React.FC = () => {
         <header className="flex flex-wrap justify-between items-center w-full mb-8">
           <div className="flex-1 shrink self-stretch my-auto basis-0 min-w-60">
             <div className="flex flex-col items-start w-full">
-              <h1 className="text-4xl font-black bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 bg-clip-text text-transparent max-md:max-w-full max-md:text-3xl">
+              <h1 className="text-4xl font-black bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 bg-clip-text text-transparent lg:text-4xl md:text-3xl sm:text-2xl text-xl">
                 LỘ TRÌNH HỌC DÀNH CHO TEENS
               </h1>
               <p className="text-lg text-slate-600 font-medium mt-2 max-md:text-base">
