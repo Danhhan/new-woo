@@ -237,13 +237,43 @@ export const RoadmapSection: React.FC = () => {
   };
 
   const durationData = {
-    label: "Thời lượng",
+    label: "⏱️ Thời lượng học",
     items: [
-      { text: "80 buổi" },
-      { text: "100 buổi" },
-      { text: "120 buổi" },
-      { text: "140 buổi" },
-      { text: "160 buổi" },
+      {
+        text: "80 buổi",
+        subtitle: "4-5 tháng",
+        icon: "⚡",
+        color: "from-green-400 to-emerald-500",
+        description: "Nền tảng vững chắc",
+      },
+      {
+        text: "100 buổi",
+        subtitle: "5-6 tháng",
+        icon: "🚀",
+        color: "from-blue-400 to-cyan-500",
+        description: "Phát triển toàn diện",
+      },
+      {
+        text: "120 buổi",
+        subtitle: "6-7 tháng",
+        icon: "💪",
+        color: "from-yellow-400 to-orange-500",
+        description: "Thành thạo giao tiếp",
+      },
+      {
+        text: "140 buổi",
+        subtitle: "7-8 tháng",
+        icon: "🎯",
+        color: "from-orange-400 to-red-500",
+        description: "Chuẩn bị đại học",
+      },
+      {
+        text: "160 buổi",
+        subtitle: "8-9 tháng",
+        icon: "👑",
+        color: "from-red-400 to-pink-500",
+        description: "Trình độ cao cấp",
+      },
     ],
   };
 
