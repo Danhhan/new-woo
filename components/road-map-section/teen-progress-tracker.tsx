@@ -73,13 +73,13 @@ export const TeenProgressTracker: React.FC<TeenProgressTrackerProps> = ({
               {/* Step content */}
               <div
                 className={`
-								flex-1 pb-6 transition-all duration-300
+								flex-1 pb-4 sm:pb-6 transition-all duration-300
 								${step.isActive ? "transform translate-x-1" : ""}
 							`}
               >
                 <h4
                   className={`
-									font-bold mb-1 transition-colors duration-300
+									text-sm sm:text-base font-bold mb-1 transition-colors duration-300
 									${
                     step.isCompleted
                       ? "text-green-600"
@@ -93,7 +93,7 @@ export const TeenProgressTracker: React.FC<TeenProgressTrackerProps> = ({
                 </h4>
                 <p
                   className={`
-									text-sm transition-colors duration-300
+									text-xs sm:text-sm transition-colors duration-300 leading-relaxed
 									${step.isActive ? "text-slate-700" : "text-slate-500"}
 								`}
                 >
@@ -103,13 +103,13 @@ export const TeenProgressTracker: React.FC<TeenProgressTrackerProps> = ({
                 {/* Progress indicator for active step */}
                 {step.isActive && (
                   <div className="mt-2">
-                    <div className="w-full bg-slate-200 rounded-full h-2">
+                    <div className="w-full bg-slate-200 rounded-full h-1.5 sm:h-2">
                       <div
-                        className="bg-gradient-to-r from-purple-500 to-pink-500 h-2 rounded-full animate-pulse"
+                        className="bg-gradient-to-r from-purple-500 to-pink-500 h-1.5 sm:h-2 rounded-full animate-pulse"
                         style={{ width: "60%" }}
                       ></div>
                     </div>
-                    <p className="text-xs text-purple-600 mt-1 font-medium">
+                    <p className="text-[10px] sm:text-xs text-purple-600 mt-1 font-medium">
                       Đang học - 60% hoàn thành
                     </p>
                   </div>
