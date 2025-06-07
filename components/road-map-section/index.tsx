@@ -300,14 +300,14 @@ export const RoadmapSection: React.FC = () => {
               <p className="lg:text-lg md:text-base sm:text-sm text-sm text-slate-600 font-medium mt-2">
                 🚀 Từ Zero đến Hero - Chinh phục tiếng Anh cùng thế hệ Gen Z!
               </p>
-              <div className="flex gap-3 mt-4">
-                <div className="px-3 py-1 bg-gradient-to-r from-purple-100 to-pink-100 rounded-full text-sm font-semibold text-purple-700">
+              <div className="flex flex-wrap gap-2 mt-4">
+                <div className="px-3 py-1 bg-gradient-to-r from-purple-100 to-pink-100 rounded-full text-xs sm:text-sm font-semibold text-purple-700">
                   📚 Lớp 6-12
                 </div>
-                <div className="px-3 py-1 bg-gradient-to-r from-blue-100 to-cyan-100 rounded-full text-sm font-semibold text-blue-700">
+                <div className="px-3 py-1 bg-gradient-to-r from-blue-100 to-cyan-100 rounded-full text-xs sm:text-sm font-semibold text-blue-700">
                   🎯 Du học - Chứng chỉ
                 </div>
-                <div className="px-3 py-1 bg-gradient-to-r from-green-100 to-emerald-100 rounded-full text-sm font-semibold text-green-700">
+                <div className="px-3 py-1 bg-gradient-to-r from-green-100 to-emerald-100 rounded-full text-xs sm:text-sm font-semibold text-green-700">
                   ⚡ 1 kèm 1 Online
                 </div>
               </div>
