@@ -277,63 +277,63 @@ export const RoadmapSection: React.FC = () => {
   ];
 
   return (
-    <section className="relative py-12 sm:py-16 bg-gradient-to-br from-slate-50 via-purple-50/30 to-pink-50/30 overflow-hidden">
+    <section className="relative py-8 sm:py-12 lg:py-16 bg-gradient-to-br from-slate-50 via-purple-50/30 to-pink-50/30 overflow-hidden">
       {/* Animated background elements */}
       <div className="absolute inset-0">
-        <div className="absolute top-20 left-4 sm:left-20 w-20 sm:w-32 h-20 sm:h-32 bg-gradient-to-br from-purple-200/40 to-pink-200/40 rounded-full blur-xl animate-pulse"></div>
-        <div className="absolute top-40 right-8 sm:right-32 w-16 sm:w-24 h-16 sm:h-24 bg-gradient-to-br from-blue-200/40 to-cyan-200/40 rounded-full blur-lg animate-pulse delay-1000"></div>
-        <div className="absolute bottom-32 left-1/3 w-24 sm:w-40 h-24 sm:h-40 bg-gradient-to-br from-indigo-200/30 to-purple-200/30 rounded-full blur-2xl animate-pulse delay-2000"></div>
+        <div className="absolute top-10 sm:top-20 left-2 sm:left-20 w-16 sm:w-32 h-16 sm:h-32 bg-gradient-to-br from-purple-200/40 to-pink-200/40 rounded-full blur-xl animate-pulse"></div>
+        <div className="absolute top-20 sm:top-40 right-4 sm:right-32 w-12 sm:w-24 h-12 sm:h-24 bg-gradient-to-br from-blue-200/40 to-cyan-200/40 rounded-full blur-lg animate-pulse delay-1000"></div>
+        <div className="absolute bottom-16 sm:bottom-32 left-1/3 w-20 sm:w-40 h-20 sm:h-40 bg-gradient-to-br from-indigo-200/30 to-purple-200/30 rounded-full blur-2xl animate-pulse delay-2000"></div>
       </div>
       <img
         src="https://cdn.builder.io/api/v1/image/assets/31c7b1c5a83a4753853375a2754b402c/908b52567c05761a61c0979fd65758b228ed742f?placeholderIfAbsent=true"
-        className="object-contain absolute bottom-0 left-2/4 z-0 -translate-x-2/4 aspect-[1.14] h-[400px] sm:h-[600px] lg:h-[840px] translate-y-[0%] w-[400px] sm:w-[600px] lg:w-[800px] opacity-10"
+        className="object-contain absolute bottom-0 left-2/4 z-0 -translate-x-2/4 aspect-[1.14] h-[300px] sm:h-[600px] lg:h-[840px] translate-y-[0%] w-[300px] sm:w-[600px] lg:w-[800px] opacity-10"
         alt=""
       />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <header className="flex flex-col lg:flex-row lg:justify-between lg:items-center w-full mb-6 sm:mb-8 space-y-4 lg:space-y-0">
-          <div className="flex-1 text-center lg:text-left">
-            <div className="flex flex-col items-center lg:items-start w-full">
-              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-black bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 bg-clip-text text-transparent leading-tight">
-                LỘ TRÌNH HỌC DÀNH CHO TEENS
-              </h1>
-              <p className="text-sm sm:text-base lg:text-lg text-slate-600 font-medium mt-2 max-w-md lg:max-w-none">
-                🚀 Từ Zero đến Hero - Chinh phục tiếng Anh cùng thế hệ Gen Z!
-              </p>
-              <div className="flex flex-wrap justify-center lg:justify-start gap-2 mt-3 sm:mt-4">
-                <div className="px-2 sm:px-3 py-1 bg-gradient-to-r from-purple-100 to-pink-100 rounded-full text-xs font-semibold text-purple-700">
-                  📚 Lớp 6-12
-                </div>
-                <div className="px-2 sm:px-3 py-1 bg-gradient-to-r from-blue-100 to-cyan-100 rounded-full text-xs font-semibold text-blue-700">
-                  🎯 Du học - Chứng chỉ
-                </div>
-                <div className="px-2 sm:px-3 py-1 bg-gradient-to-r from-green-100 to-emerald-100 rounded-full text-xs font-semibold text-green-700">
-                  ⚡ 1 kèm 1 Online
-                </div>
-              </div>
+      <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 relative z-10">
+        {/* Mobile-First Header */}
+        <header className="text-center mb-6 sm:mb-8">
+          <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-black bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 bg-clip-text text-transparent leading-tight mb-3 sm:mb-4">
+            LỘ TRÌNH HỌC DÀNH CHO TEENS
+          </h1>
+          <p className="text-sm sm:text-base lg:text-lg text-slate-600 font-medium mb-4">
+            🚀 Từ Zero đến Hero - Chinh phục tiếng Anh cùng thế hệ Gen Z!
+          </p>
+
+          {/* Compact Badge Section */}
+          <div className="flex flex-wrap justify-center items-center gap-2 sm:gap-4 mb-4">
+            <div className="flex flex-wrap justify-center gap-2">
+              <span className="px-2 py-1 bg-gradient-to-r from-purple-100 to-pink-100 rounded-full text-xs font-semibold text-purple-700">
+                📚 Lớp 6-12
+              </span>
+              <span className="px-2 py-1 bg-gradient-to-r from-blue-100 to-cyan-100 rounded-full text-xs font-semibold text-blue-700">
+                🎯 Du học - Chứng chỉ
+              </span>
+              <span className="px-2 py-1 bg-gradient-to-r from-green-100 to-emerald-100 rounded-full text-xs font-semibold text-green-700">
+                ⚡ 1 kèm 1 Online
+              </span>
             </div>
-          </div>
-          <div className="flex justify-center lg:justify-end items-center">
-            <div className="flex gap-2 sm:gap-2.5 items-center">
-              <div className="flex overflow-hidden flex-col justify-center items-center bg-gradient-to-br from-yellow-400 to-orange-400 h-[40px] sm:h-[48px] lg:h-[58px] rounded-full w-[40px] sm:w-[48px] lg:w-[58px] shadow-lg hover:shadow-xl transition-shadow duration-300">
+
+            {/* Logo */}
+            <div className="flex gap-2 items-center">
+              <div className="flex overflow-hidden flex-col justify-center items-center bg-gradient-to-br from-yellow-400 to-orange-400 h-8 sm:h-10 rounded-full w-8 sm:w-10 shadow-lg">
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets/31c7b1c5a83a4753853375a2754b402c/7fe39650d3675ad48497574ab2254dab7be7286e?placeholderIfAbsent=true"
-                  className="object-contain aspect-[1.43] w-[28px] sm:w-[35px] lg:w-[43px]"
+                  className="object-contain aspect-[1.43] w-5 sm:w-6"
                   alt=""
                 />
               </div>
-              <div className="text-xs sm:text-sm font-bold text-slate-700 text-center lg:text-left">
-                Wings of
-                <br />
-                <span className="text-indigo-600">Opportunity</span>
+              <div className="text-xs font-bold text-slate-700 hidden sm:block">
+                <div>Wings of</div>
+                <div className="text-indigo-600">Opportunity</div>
               </div>
             </div>
           </div>
         </header>
 
-        <main className="flex flex-col justify-center mt-4 sm:mt-6 w-full">
-          {/* Level Cards - Mobile Optimized */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-3 sm:gap-4 w-full text-xs font-bold leading-4 text-blue-900">
+        <main className="space-y-6 sm:space-y-8">
+          {/* Level Cards - Mobile Responsive */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-3 sm:gap-4">
             {levelData.map((level, index) => (
               <LevelCard
                 key={index}
@@ -345,75 +345,62 @@ export const RoadmapSection: React.FC = () => {
             ))}
           </div>
 
-          {/* Certification Section - Simple Design */}
-          <div className="mt-6 sm:mt-8 w-full font-extrabold space-y-4 sm:space-y-6">
-            <div className="space-y-2">
-              <CertificationRow
-                label={cambridgeData.label}
-                items={cambridgeData.items}
-              />
-            </div>
+          {/* Certification Section - Mobile Friendly */}
+          <div className="space-y-4 sm:space-y-6">
+            <CertificationRow
+              label={cambridgeData.label}
+              items={cambridgeData.items}
+            />
 
-            <div className="flex flex-wrap gap-1 items-start w-full">
-              <div className="text-sm text-sky-900 w-[69px]">CEFR</div>
-              <div className="flex flex-1 shrink gap-4 justify-center items-center text-xs text-center text-blue-900 basis-0 min-w-60">
-                <div className="flex flex-col flex-1 shrink justify-center self-stretch my-auto w-full basis-0 min-w-60">
-                  <div className="flex flex-wrap gap-2 items-start w-full">
-                    {cefrData.items.map((item, index) => (
-                      <div
-                        key={index}
-                        className="overflow-hidden flex-1 shrink px-1 pt-1 pb-2 bg-cyan-400 rounded-md basis-0 border-neutral-800 shadow-[3px_3px_0px_rgba(34,34,34,1)]"
-                      >
-                        <div className="overflow-hidden gap-1.5 self-stretch px-2 sm:px-3.5 py-1.5 w-full bg-white rounded-md border-neutral-800 shadow-[1px_1px_0px_rgba(34,34,34,1)]">
-                          {item.text}
-                        </div>
-                      </div>
-                    ))}
+            <div className="space-y-2">
+              <div className="text-sm font-bold text-sky-900">CEFR</div>
+              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-2">
+                {cefrData.items.map((item, index) => (
+                  <div
+                    key={index}
+                    className="overflow-hidden px-1 pt-1 pb-2 bg-cyan-400 rounded-md border-neutral-800 shadow-[3px_3px_0px_rgba(34,34,34,1)]"
+                  >
+                    <div className="overflow-hidden gap-1.5 px-2 py-1.5 w-full bg-white rounded-md border-neutral-800 shadow-[1px_1px_0px_rgba(34,34,34,1)] text-[10px] sm:text-xs text-center text-blue-900">
+                      {item.text}
+                    </div>
                   </div>
-                </div>
+                ))}
               </div>
             </div>
 
-            <div className="flex flex-wrap gap-1 items-start w-full">
-              <div className="text-sm text-sky-900 w-[69px]">Thời lượng</div>
-              <div className="flex flex-1 shrink gap-4 justify-center items-center text-xs text-center text-blue-900 basis-0 min-w-60">
-                <div className="flex flex-col flex-1 shrink justify-center self-stretch my-auto w-full basis-0 min-w-60">
-                  <div className="flex flex-wrap gap-2 items-start w-full">
-                    {durationData.items.map((item, index) => (
-                      <div
-                        key={index}
-                        className="overflow-hidden flex-1 shrink px-1 pt-1 pb-2 bg-cyan-400 rounded-md basis-0 border-neutral-800 shadow-[3px_3px_0px_rgba(34,34,34,1)]"
-                      >
-                        <div className="overflow-hidden gap-1.5 self-stretch px-2 sm:px-3.5 py-1.5 w-full bg-white rounded-md border-neutral-800 shadow-[1px_1px_0px_rgba(34,34,34,1)]">
-                          {item.text}
-                        </div>
-                      </div>
-                    ))}
+            <div className="space-y-2">
+              <div className="text-sm font-bold text-sky-900">Thời lượng</div>
+              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-2">
+                {durationData.items.map((item, index) => (
+                  <div
+                    key={index}
+                    className="overflow-hidden px-1 pt-1 pb-2 bg-cyan-400 rounded-md border-neutral-800 shadow-[3px_3px_0px_rgba(34,34,34,1)]"
+                  >
+                    <div className="overflow-hidden gap-1.5 px-2 py-1.5 w-full bg-white rounded-md border-neutral-800 shadow-[1px_1px_0px_rgba(34,34,34,1)] text-[10px] sm:text-xs text-center text-blue-900">
+                      {item.text}
+                    </div>
                   </div>
-                </div>
+                ))}
               </div>
             </div>
           </div>
 
           <AchievementBadges badges={achievementBadges} />
 
-          {/* Teen-specific features - Mobile Optimized */}
-          <div className="grid grid-cols-1 xl:grid-cols-2 gap-6 sm:gap-8 mt-6 sm:mt-8">
+          {/* Teen Features - Mobile Stack */}
+          <div className="grid grid-cols-1 xl:grid-cols-2 gap-4 sm:gap-6">
             <TeenProgressTracker steps={progressSteps} />
             <TeenStudyTips />
           </div>
 
-          {/* Teen Statistics */}
           <TeenStats />
-
-          {/* Call to Action for Teens */}
           <TeenCTA />
         </main>
       </div>
 
       <img
         src="https://cdn.builder.io/api/v1/image/assets/31c7b1c5a83a4753853375a2754b402c/7c7df2b82b9b6f495a354806f8b5fe612a2ce08d?placeholderIfAbsent=true"
-        className="object-contain absolute z-0 shrink-0 aspect-[1.21] bottom-[321px] h-[34px] left-[98px] w-[41px] hidden sm:block"
+        className="object-contain absolute z-0 shrink-0 aspect-[1.21] bottom-[321px] h-[34px] left-[98px] w-[41px] hidden lg:block"
         alt=""
       />
     </section>
