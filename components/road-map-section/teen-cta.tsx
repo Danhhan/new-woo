@@ -3,26 +3,26 @@ import * as React from "react";
 
 export const TeenCTA: React.FC = () => {
   return (
-    <div className="mt-8 p-8 bg-gradient-to-br from-purple-600 via-pink-600 to-orange-500 rounded-2xl text-white text-center relative overflow-hidden">
+    <div className="mt-6 sm:mt-8 p-6 sm:p-8 bg-gradient-to-br from-purple-600 via-pink-600 to-orange-500 rounded-2xl text-white text-center relative overflow-hidden">
       {/* Background effects */}
       <div className="absolute inset-0 bg-black/20"></div>
-      <div className="absolute top-4 left-4 w-20 h-20 bg-white/10 rounded-full blur-xl"></div>
-      <div className="absolute bottom-4 right-4 w-32 h-32 bg-white/10 rounded-full blur-2xl"></div>
+      <div className="absolute top-4 left-4 w-12 sm:w-20 h-12 sm:h-20 bg-white/10 rounded-full blur-xl"></div>
+      <div className="absolute bottom-4 right-4 w-20 sm:w-32 h-20 sm:h-32 bg-white/10 rounded-full blur-2xl"></div>
 
       <div className="relative z-10">
-        <h3 className="text-3xl font-black mb-4">
+        <h3 className="text-2xl sm:text-3xl font-black mb-3 sm:mb-4">
           🚀 Sẵn sàng bắt đầu hành trình?
         </h3>
-        <p className="text-xl mb-6 opacity-90">
+        <p className="text-lg sm:text-xl mb-4 sm:mb-6 opacity-90">
           Tham gia cộng đồng <span className="font-bold">10,000+ teens</span>{" "}
           đang học tiếng Anh cùng WOO Group!
         </p>
 
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-6">
-          <button className="px-8 py-4 bg-white text-purple-600 font-bold rounded-full hover:bg-yellow-100 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg">
+        <div className="flex flex-col gap-3 sm:gap-4 justify-center items-center mb-4 sm:mb-6">
+          <button className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-white text-purple-600 font-bold rounded-full hover:bg-yellow-100 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg text-sm sm:text-base">
             📞 Đăng ký học thử MIỄN PHÍ
           </button>
-          <button className="px-8 py-4 bg-transparent border-2 border-white text-white font-bold rounded-full hover:bg-white hover:text-purple-600 transition-all duration-300 transform hover:-translate-y-1">
+          <button className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-transparent border-2 border-white text-white font-bold rounded-full hover:bg-white hover:text-purple-600 transition-all duration-300 transform hover:-translate-y-1 text-sm sm:text-base">
             💬 Tư vấn 1-1 với chuyên gia
           </button>
         </div>
