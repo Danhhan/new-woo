@@ -70,7 +70,7 @@ export const RoadmapSection: React.FC = () => {
         {
           iconSrc:
             "https://cdn.builder.io/api/v1/image/assets/31c7b1c5a83a4753853375a2754b402c/ca501de2c0aaf3780f4cdaa7b9d13704cfe9362e?placeholderIfAbsent=true",
-          text: "Đạt điểm cao trong c��c bài kiểm tra tiếng Anh ở trường",
+          text: "Đạt điểm cao trong các bài kiểm tra tiếng Anh ở trường",
         },
       ],
     },
@@ -395,7 +395,7 @@ export const RoadmapSection: React.FC = () => {
           <AchievementBadges badges={achievementBadges} />
 
           {/* Teen-specific features - Mobile Optimized */}
-          <div className="grid grid-cols-1 xl:grid-cols-2 gap-6 sm:gap-8 mt-6 sm:mt-8">
+          <div className="grid grid-cols-1 xl:grid-cols-2 gap-4 sm:gap-6 mt-4 sm:mt-6">
             <TeenProgressTracker steps={progressSteps} />
             <TeenStudyTips />
           </div>
