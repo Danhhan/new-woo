@@ -171,33 +171,33 @@ export const RoadmapSection: React.FC = () => {
   const cambridgeData = {
     label: "Cambridge",
     items: [
-      { text: "STARTERS", fontSize: "11px" },
-      { text: "MOVERS" },
-      { text: "FLYERS/KET" },
-      { text: "PET" },
-      { text: "FCE" },
+      { text: "A2 KEY", fontSize: "11px" },
+      { text: "B1 PET" },
+      { text: "B2 FIRST" },
+      { text: "C1 ADVANCED" },
+      { text: "C2 PROFICIENCY" },
     ],
   };
 
   const cefrData = {
     label: "CEFR",
     items: [
-      { text: "🟤 Level A0" },
-      { text: "🟢 Level A1" },
-      { text: "🔵 Level A2" },
-      { text: "🟡 Level B1" },
-      { text: "🔴 Level B2" },
+      { text: "🟢 Level A2" },
+      { text: "🔵 Level B1" },
+      { text: "🟡 Level B2" },
+      { text: "🟠 Level C1" },
+      { text: "🔴 Level C2" },
     ],
   };
 
   const durationData = {
     label: "Thời lượng",
     items: [
-      { text: "60 buổi" },
-      { text: "60 buổi" },
-      { text: "120 bu���i" },
+      { text: "80 buổi" },
+      { text: "100 buổi" },
       { text: "120 buổi" },
-      { text: "180 buổi" },
+      { text: "140 buổi" },
+      { text: "160 buổi" },
     ],
   };
 
