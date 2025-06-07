@@ -516,6 +516,9 @@ export const RoadmapSection: React.FC = () => {
 
           <AchievementBadges badges={achievementBadges} />
 
+          {/* Certificate Comparison */}
+          <CertificateComparison />
+
           {/* Teen-specific features - Mobile Optimized */}
           <div className="grid grid-cols-1 xl:grid-cols-2 gap-6 sm:gap-8 mt-6 sm:mt-8">
             <TeenProgressTracker steps={progressSteps} />
