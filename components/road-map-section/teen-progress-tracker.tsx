@@ -17,8 +17,8 @@ export const TeenProgressTracker: React.FC<TeenProgressTrackerProps> = ({
   steps,
 }) => {
   return (
-    <div className="mt-8 p-6 bg-white/80 backdrop-blur-sm rounded-xl shadow-lg">
-      <h3 className="text-xl font-bold text-slate-800 mb-6 text-center">
+    <div className="mt-6 sm:mt-8 p-4 sm:p-6 bg-white/80 backdrop-blur-sm rounded-xl shadow-lg">
+      <h3 className="text-lg sm:text-xl font-bold text-slate-800 mb-4 sm:mb-6 text-center">
         🎯 Theo dõi hành trình học tập của bạn
       </h3>
 
