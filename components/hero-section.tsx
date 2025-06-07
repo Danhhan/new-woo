@@ -56,23 +56,47 @@ export default function HeroSection() {
               </div>
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-fadeInLeft delay-400">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start animate-fadeInLeft delay-400">
               <Button
                 size="lg"
-                className="bg-gradient-to-r from-[#FFEA00] to-[#FFD700] hover:from-[#FFD700] hover:to-[#FFEA00] text-[#083D77] font-semibold px-8 py-4 rounded-full transition-all duration-300 hover:scale-105 hover:shadow-xl text-lg transform"
+                className="bg-gradient-to-r from-[#FFEA00] to-[#FFD700] hover:from-[#FFD700] hover:to-[#FFEA00] text-[#083D77] font-bold px-6 sm:px-8 py-3 sm:py-4 rounded-full transition-all duration-300 hover:scale-105 hover:shadow-xl text-base sm:text-lg transform group"
               >
-                Khám phá khóa học
-                <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
+                🎯 Đăng ký học thử MIỄN PHÍ
+                <ArrowRight className="ml-2 h-4 sm:h-5 w-4 sm:w-5 transition-transform duration-300 group-hover:translate-x-1" />
               </Button>
 
               <Button
                 variant="outline"
                 size="lg"
-                className="border-2 border-[#083D77] hover:border-[#FFEA00] text-[#083D77] hover:text-[#FFEA00] hover:bg-[#FFEA00]/10 font-semibold px-8 py-4 rounded-full transition-all duration-300 text-lg group"
+                className="border-2 border-[#083D77] hover:border-[#FFEA00] text-[#083D77] hover:text-white hover:bg-[#083D77] font-semibold px-6 sm:px-8 py-3 sm:py-4 rounded-full transition-all duration-300 text-base sm:text-lg group"
               >
-                <Play className="mr-2 h-5 w-5 transition-transform duration-300 group-hover:scale-110" />
-                Xem video
+                <Play className="mr-2 h-4 sm:h-5 w-4 sm:w-5 transition-transform duration-300 group-hover:scale-110" />
+                Xem demo
               </Button>
+            </div>
+
+            {/* Trust Indicators */}
+            <div className="mt-6 sm:mt-8 animate-fadeInLeft delay-500">
+              <p className="text-sm text-gray-500 mb-3">
+                ✨ Được tin tương bởi 10,000+ học viên
+              </p>
+              <div className="flex flex-wrap items-center gap-4 sm:gap-6">
+                <div className="flex -space-x-2">
+                  <div className="w-8 h-8 rounded-full bg-gradient-to-br from-yellow-400 to-orange-500 border-2 border-white"></div>
+                  <div className="w-8 h-8 rounded-full bg-gradient-to-br from-blue-400 to-purple-500 border-2 border-white"></div>
+                  <div className="w-8 h-8 rounded-full bg-gradient-to-br from-green-400 to-teal-500 border-2 border-white"></div>
+                  <div className="w-8 h-8 rounded-full bg-gradient-to-br from-pink-400 to-red-500 border-2 border-white flex items-center justify-center text-white text-xs font-bold">
+                    +2K
+                  </div>
+                </div>
+                <div className="text-sm text-gray-600">
+                  <div className="flex items-center gap-1">
+                    <span className="text-yellow-500">⭐⭐⭐⭐⭐</span>
+                    <span className="font-semibold">4.9/5</span>
+                    <span>(2,847 reviews)</span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
