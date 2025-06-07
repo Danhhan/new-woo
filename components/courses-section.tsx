@@ -82,10 +82,10 @@ export default function CoursesSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-12 sm:mb-16 animate-fadeInUp">
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-            Khóa học tại{" "}
             <span className="bg-gradient-to-r from-[#FFD700] to-[#FFD700] bg-clip-text text-transparent">
-              WOO GROUP
-            </span>
+              Khóa học
+            </span>{" "}
+            của chúng tôi
           </h2>
           <p className="text-base sm:text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto">
             Đa dạng lứa tuổi - Đặc biệt tập trung <strong>TEENS</strong> - Cam
