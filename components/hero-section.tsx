@@ -38,8 +38,8 @@ export default function HeroSection() {
                 </span>
               </h3>
               <p className="text-base sm:text-lg text-gray-600 max-w-2xl">
-                Mở khóa kỹ năng giao tiếp tiếng Anh - Từ Zero đến Hero cùng WOO
-                Group
+                Mở khóa kỹ năng giao tiếp tiếng Anh - Từ Zero đến Hero cùng
+                chúng tôi
               </p>
 
               {/* Key Features */}
