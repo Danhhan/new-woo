@@ -297,7 +297,7 @@ export const RoadmapSection: React.FC = () => {
               LỘ TRÌNH HỌC DÀNH CHO TEENS
             </h1>
             <p className="text-sm sm:text-base text-slate-600 font-medium mt-2 px-4">
-              🚀 Từ Zero đến Hero - Chinh phục tiếng Anh cùng thế hệ Gen Z!
+              🚀 Từ Zero đến Hero - Chinh ph��c tiếng Anh cùng thế hệ Gen Z!
             </p>
           </div>
 
@@ -332,7 +332,7 @@ export const RoadmapSection: React.FC = () => {
 
         <main className="flex flex-col justify-center mt-4 sm:mt-6 w-full">
           {/* Level Cards - Mobile Optimized */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-3 sm:gap-4 w-full text-xs font-bold leading-4 text-blue-900">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-2 sm:gap-3 lg:gap-4 w-full text-xs font-bold leading-4 text-blue-900">
             {levelData.map((level, index) => (
               <LevelCard
                 key={index}
