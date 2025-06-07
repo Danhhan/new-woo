@@ -196,13 +196,43 @@ export const RoadmapSection: React.FC = () => {
   };
 
   const cefrData = {
-    label: "CEFR",
+    label: "🌟 CEFR Level",
     items: [
-      { text: "🟢 Level A2" },
-      { text: "🔵 Level B1" },
-      { text: "🟡 Level B2" },
-      { text: "🟠 Level C1" },
-      { text: "🔴 Level C2" },
+      {
+        text: "A2 Elementary",
+        subtitle: "Pre-intermediate",
+        icon: "🟢",
+        color: "from-green-400 to-emerald-500",
+        description: "Giao tiếp cơ bản",
+      },
+      {
+        text: "B1 Intermediate",
+        subtitle: "Threshold",
+        icon: "🔵",
+        color: "from-blue-400 to-cyan-500",
+        description: "Thảo luận tự tin",
+      },
+      {
+        text: "B2 Upper-Inter",
+        subtitle: "Vantage",
+        icon: "🟡",
+        color: "from-yellow-400 to-orange-500",
+        description: "Thành thạo học thuật",
+      },
+      {
+        text: "C1 Advanced",
+        subtitle: "Proficiency",
+        icon: "🟠",
+        color: "from-orange-400 to-red-500",
+        description: "Gần như native",
+      },
+      {
+        text: "C2 Mastery",
+        subtitle: "Near-native",
+        icon: "🔴",
+        color: "from-red-400 to-pink-500",
+        description: "Thành thạo hoàn toàn",
+      },
     ],
   };
 
