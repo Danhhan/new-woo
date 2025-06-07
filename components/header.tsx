@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { Menu, X, Globe } from "lucide-react";
+import { Menu, X } from "lucide-react";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -36,14 +36,14 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <div className="flex items-center space-x-2 animate-fadeInLeft">
+          <div className="flex items-center animate-fadeInLeft">
             <div className="relative">
-              <Globe className="h-8 w-8 text-[#FFEA00] animate-float" />
-              <div className="absolute inset-0 h-8 w-8 text-[#083D77] opacity-30 animate-pulse"></div>
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets/31c7b1c5a83a4753853375a2754b402c/7fe39650d3675ad48497574ab2254dab7be7286e?placeholderIfAbsent=true"
+                alt="WOO GROUP Logo"
+                className="h-10 w-auto object-contain animate-float"
+              />
             </div>
-            <span className="text-2xl font-bold bg-gradient-to-r from-[#083D77] to-[#FFEA00] bg-clip-text text-transparent">
-              WOO GROUP
-            </span>
           </div>
 
           {/* Desktop Navigation */}
@@ -52,25 +52,25 @@ export default function Header() {
               <a
                 key={item.name}
                 href={item.href}
-                className="text-[#083D77] hover:text-[#FFEA00] transition-all duration-300 font-medium relative group animate-fadeInUp"
+                className="relative text-[#083D77] hover:text-[#FFD700] font-medium transition-colors duration-300 group animate-fadeInUp"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 {item.name}
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-[#FFEA00] to-[#083D77] transition-all duration-300 group-hover:w-full"></span>
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-[#FFD700] to-[#083D77] transition-all duration-300 group-hover:w-full"></span>
               </a>
             ))}
           </nav>
 
-          {/* Contact Button */}
+          {/* CTA Button */}
           <div className="hidden md:block animate-fadeInRight">
-            <Button className="bg-gradient-to-r from-[#FFEA00] to-[#FFD700] hover:from-[#FFD700] hover:to-[#FFEA00] text-[#083D77] font-semibold px-6 py-2 rounded-full transition-all duration-300 hover:scale-105 hover:shadow-lg transform">
+            <Button className="bg-gradient-to-r from-[#FFD700] to-[#FFD700] hover:from-[#FFD700] hover:to-[#FFD700] text-[#083D77] font-semibold px-6 py-2 rounded-full transition-all duration-300 hover:scale-105 hover:shadow-lg">
               Liên hệ tư vấn
             </Button>
           </div>
 
-          {/* Mobile Menu Button */}
+          {/* Mobile menu button */}
           <button
-            className="md:hidden p-2 text-[#083D77] hover:text-[#FFEA00] transition-colors duration-300"
+            className="md:hidden p-2 rounded-lg text-[#083D77] hover:bg-gray-100 transition-colors duration-200"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             {isMenuOpen ? (
@@ -81,22 +81,21 @@ export default function Header() {
           </button>
         </div>
 
-        {/* Mobile Menu */}
+        {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden py-4 border-t border-gray-200 animate-fadeInUp">
-            <div className="flex flex-col space-y-4">
-              {navItems.map((item, index) => (
-                <a
-                  key={item.name}
-                  href={item.href}
-                  className="text-[#083D77] hover:text-[#FFEA00] transition-colors duration-300 font-medium animate-fadeInLeft"
-                  style={{ animationDelay: `${index * 0.1}s` }}
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  {item.name}
-                </a>
-              ))}
-              <Button className="bg-gradient-to-r from-[#FFEA00] to-[#FFD700] hover:from-[#FFD700] hover:to-[#FFEA00] text-[#083D77] font-semibold px-6 py-2 rounded-full transition-all duration-300 w-fit animate-scaleIn">
+          <div className="md:hidden py-4 space-y-3 animate-fadeInUp">
+            {navItems.map((item) => (
+              <a
+                key={item.name}
+                href={item.href}
+                className="block text-[#083D77] hover:text-[#FFD700] font-medium transition-colors duration-300 py-2"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                {item.name}
+              </a>
+            ))}
+            <div className="pt-3">
+              <Button className="w-full bg-gradient-to-r from-[#FFD700] to-[#FFD700] text-[#083D77] font-semibold py-2 rounded-full">
                 Liên hệ tư vấn
               </Button>
             </div>
