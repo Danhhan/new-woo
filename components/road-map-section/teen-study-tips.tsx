@@ -55,19 +55,19 @@ export const TeenStudyTips: React.FC = () => {
   ];
 
   return (
-    <div className="mt-8 p-6 bg-gradient-to-br from-indigo-50 to-purple-50 rounded-xl shadow-lg">
-      <h3 className="text-2xl font-bold text-center mb-6">
+    <div className="mt-6 sm:mt-8 p-4 sm:p-6 bg-gradient-to-br from-indigo-50 to-purple-50 rounded-xl shadow-lg">
+      <h3 className="text-lg sm:text-2xl font-bold text-center mb-4 sm:mb-6">
         <span className="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
           💡 Study Tips cho Gen Z
         </span>
       </h3>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4">
         {studyTips.map((tip, index) => (
           <div
             key={index}
             className={`
-							p-4 bg-gradient-to-br ${tip.color} rounded-lg border border-white/50 
+							p-4 bg-gradient-to-br ${tip.color} rounded-lg border border-white/50
 							hover:shadow-md transition-all duration-300 hover:-translate-y-1 group
 							animate-scaleIn
 						`}
