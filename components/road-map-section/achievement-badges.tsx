@@ -16,12 +16,12 @@ export const AchievementBadges: React.FC<AchievementBadgesProps> = ({
   badges,
 }) => {
   return (
-    <div className="flex flex-col justify-center mt-6 w-full max-md:max-w-full">
-      <div className="flex flex-wrap gap-4 w-full max-md:max-w-full">
+    <div className="flex flex-col justify-center mt-6 w-full">
+      <div className="flex flex-wrap gap-4 w-full">
         <div className="self-start text-sm font-extrabold leading-5 text-sky-900 w-[69px]">
           Chứng chỉ
         </div>
-        <div className="flex flex-wrap flex-1 shrink gap-4 items-start h-full basis-0 min-w-60 max-md:max-w-full">
+        <div className="flex flex-wrap flex-1 shrink gap-4 items-start h-full basis-0 min-w-60">
           {badges.map((badge, index) => (
             <div
               key={index}
