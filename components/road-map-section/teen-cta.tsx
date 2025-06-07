@@ -11,11 +11,11 @@ export const TeenCTA: React.FC = () => {
 
       <div className="relative z-10">
         <h3 className="text-2xl sm:text-3xl font-black mb-3 sm:mb-4">
-          Sẵn sàng b���t đầu hành trình?
+          Sẵn sàng bắt đầu hành trình?
         </h3>
         <p className="text-lg sm:text-xl mb-4 sm:mb-6 opacity-90">
           Tham gia cộng đồng <span className="font-bold">10,000+ teens</span>{" "}
-          đang học tiếng Anh cùng WOO Group
+          đang học tiếng Anh cùng chúng tôi
         </p>
 
         <div className="flex flex-col gap-3 sm:gap-4 justify-center items-center mb-4 sm:mb-6">
