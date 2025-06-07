@@ -7,7 +7,6 @@ import { TeenProgressTracker } from "./teen-progress-tracker";
 import { TeenStudyTips } from "./teen-study-tips";
 import { TeenCTA } from "./teen-cta";
 import { TeenStats } from "./teen-stats";
-import { CertificateComparison } from "./certificate-comparison";
 
 export const RoadmapSection: React.FC = () => {
   const levelData = [
@@ -174,107 +173,35 @@ export const RoadmapSection: React.FC = () => {
   ];
 
   const cambridgeData = {
-    label: "🎓 Cambridge",
+    label: "Cambridge",
     items: [
-      {
-        text: "A2 Key for Schools",
-        icon: "🟢",
-        color: "from-green-400 to-emerald-500",
-      },
-      {
-        text: "B1 PET for Schools",
-        icon: "🔵",
-        color: "from-blue-400 to-cyan-500",
-      },
-      {
-        text: "B2 First for Schools",
-        icon: "🟡",
-        color: "from-yellow-400 to-orange-500",
-      },
-      { text: "C1 Advanced", icon: "🟠", color: "from-orange-400 to-red-500" },
-      { text: "C2 Proficiency", icon: "🔴", color: "from-red-400 to-pink-500" },
+      { text: "A2 KEY", fontSize: "11px" },
+      { text: "B1 PET" },
+      { text: "B2 FIRST" },
+      { text: "C1 ADVANCED" },
+      { text: "C2 PROFICIENCY" },
     ],
   };
 
   const cefrData = {
-    label: "🌟 CEFR Level",
+    label: "CEFR",
     items: [
-      {
-        text: "A2 Elementary",
-        subtitle: "Pre-intermediate",
-        icon: "🟢",
-        color: "from-green-400 to-emerald-500",
-        description: "Giao tiếp cơ bản",
-      },
-      {
-        text: "B1 Intermediate",
-        subtitle: "Threshold",
-        icon: "🔵",
-        color: "from-blue-400 to-cyan-500",
-        description: "Thảo luận tự tin",
-      },
-      {
-        text: "B2 Upper-Inter",
-        subtitle: "Vantage",
-        icon: "🟡",
-        color: "from-yellow-400 to-orange-500",
-        description: "Thành thạo học thuật",
-      },
-      {
-        text: "C1 Advanced",
-        subtitle: "Proficiency",
-        icon: "🟠",
-        color: "from-orange-400 to-red-500",
-        description: "Gần như native",
-      },
-      {
-        text: "C2 Mastery",
-        subtitle: "Near-native",
-        icon: "🔴",
-        color: "from-red-400 to-pink-500",
-        description: "Thành thạo hoàn toàn",
-      },
+      { text: "🟢 Level A2" },
+      { text: "🔵 Level B1" },
+      { text: "🟡 Level B2" },
+      { text: "🟠 Level C1" },
+      { text: "🔴 Level C2" },
     ],
   };
 
   const durationData = {
-    label: "⏱️ Thời lượng học",
+    label: "Thời lượng",
     items: [
-      {
-        text: "80 buổi",
-        subtitle: "4-5 tháng",
-        icon: "⚡",
-        color: "from-green-400 to-emerald-500",
-        description: "Nền tảng vững chắc",
-      },
-      {
-        text: "100 buổi",
-        subtitle: "5-6 tháng",
-        icon: "🚀",
-        color: "from-blue-400 to-cyan-500",
-        description: "Phát triển toàn diện",
-      },
-      {
-        text: "120 buổi",
-        subtitle: "6-7 tháng",
-        icon: "💪",
-        color: "from-yellow-400 to-orange-500",
-        description: "Thành thạo giao tiếp",
-      },
-      {
-        text: "140 buổi",
-        subtitle: "7-8 tháng",
-        icon: "🎯",
-        color: "from-orange-400 to-red-500",
-        description: "Chuẩn bị đại học",
-      },
-      {
-        text: "160 buổi",
-        subtitle: "8-9 tháng",
-        icon: "👑",
-        color: "from-red-400 to-pink-500",
-        description: "Trình độ cao cấp",
-      },
+      { text: "80 buổi" },
+      { text: "100 buổi" },
+      { text: "120 buổi" },
+      { text: "140 buổi" },
+      { text: "160 buổi" },
     ],
   };
 
@@ -318,39 +245,34 @@ export const RoadmapSection: React.FC = () => {
 
   const achievementBadges = [
     {
-      icon: "🎓",
+      src: "https://cdn.builder.io/api/v1/image/assets/31c7b1c5a83a4753853375a2754b402c/625af75d4bb3d1bd91db9dc3178aba0afba8958b?placeholderIfAbsent=true",
+      aspectRatio: "aspect-[0.73]",
+      width: "w-[57px]",
       title: "IELTS for Schools",
-      subtitle: "6.0 - 8.5+",
-      color: "from-blue-500 to-cyan-500",
-      description: "Chứng chỉ du học phổ biến nhất",
     },
     {
-      icon: "📜",
-      title: "Cambridge First",
-      subtitle: "B2 Level",
-      color: "from-purple-500 to-pink-500",
-      description: "Chứng chỉ quốc tế uy tín",
+      src: "https://cdn.builder.io/api/v1/image/assets/31c7b1c5a83a4753853375a2754b402c/b85b725901e0cd78d5659f22647bc4740b4b5829?placeholderIfAbsent=true",
+      aspectRatio: "aspect-[0.73]",
+      width: "w-[57px]",
+      title: "Cambridge B2 First",
     },
     {
-      icon: "🏆",
-      title: "TOEFL iBT",
-      subtitle: "80-120 pts",
-      color: "from-orange-500 to-red-500",
-      description: "Tiêu chuẩn Mỹ - Canada",
+      src: "https://cdn.builder.io/api/v1/image/assets/31c7b1c5a83a4753853375a2754b402c/fcdcc224056a76314ed3c045f2859f9fa5e2b283?placeholderIfAbsent=true",
+      aspectRatio: "aspect-[0.82]",
+      width: "w-16",
+      title: "TOEFL Junior",
     },
     {
-      icon: "✨",
-      title: "SAT English",
-      subtitle: "600-800 pts",
-      color: "from-green-500 to-emerald-500",
-      description: "Thi vào đại học Mỹ",
+      src: "https://cdn.builder.io/api/v1/image/assets/31c7b1c5a83a4753853375a2754b402c/c9ff47b0e5d720847da5730af6e0290621303654?placeholderIfAbsent=true",
+      aspectRatio: "aspect-[0.85]",
+      width: "w-[66px]",
+      title: "SAT/ACT Prep",
     },
     {
-      icon: "🌟",
-      title: "Học bổng",
-      subtitle: "Up to 100%",
-      color: "from-yellow-500 to-orange-500",
-      description: "Du học với học bổng toàn phần",
+      src: "https://cdn.builder.io/api/v1/image/assets/31c7b1c5a83a4753853375a2754b402c/ab4be5ccc16276ad4f5fb05f5a742e71b956574d?placeholderIfAbsent=true",
+      aspectRatio: "aspect-square",
+      width: "w-[78px]",
+      title: "Du học - Học bổng",
     },
   ];
 
@@ -423,101 +345,57 @@ export const RoadmapSection: React.FC = () => {
             ))}
           </div>
 
-          {/* Modern Certification Section */}
-          <div className="mt-6 sm:mt-8 w-full space-y-6 sm:space-y-8">
-            {/* Cambridge Certificates */}
-            <div className="space-y-4">
-              <h3 className="text-lg sm:text-xl font-bold text-center text-slate-800">
-                {cambridgeData.label}
-              </h3>
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3 sm:gap-4">
-                {cambridgeData.items.map((item, index) => (
-                  <div
-                    key={index}
-                    className={`
-											p-4 bg-gradient-to-br ${item.color} rounded-xl text-white
-											shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1
-											group cursor-pointer relative overflow-hidden
-										`}
-                  >
-                    <div className="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                    <div className="relative z-10 text-center">
-                      <div className="text-2xl mb-2">{item.icon}</div>
-                      <div className="font-bold text-sm mb-1">{item.text}</div>
-                      <div className="text-xs opacity-90">Teens Certified</div>
-                    </div>
+          {/* Certification Section - Simple Design */}
+          <div className="mt-6 sm:mt-8 w-full font-extrabold space-y-4 sm:space-y-6">
+            <div className="space-y-2">
+              <CertificationRow
+                label={cambridgeData.label}
+                items={cambridgeData.items}
+              />
+            </div>
+
+            <div className="flex flex-wrap gap-1 items-start w-full">
+              <div className="text-sm text-sky-900 w-[69px]">CEFR</div>
+              <div className="flex flex-1 shrink gap-4 justify-center items-center text-xs text-center text-blue-900 basis-0 min-w-60">
+                <div className="flex flex-col flex-1 shrink justify-center self-stretch my-auto w-full basis-0 min-w-60">
+                  <div className="flex flex-wrap gap-2 items-start w-full">
+                    {cefrData.items.map((item, index) => (
+                      <div
+                        key={index}
+                        className="overflow-hidden flex-1 shrink px-1 pt-1 pb-2 bg-cyan-400 rounded-md basis-0 border-neutral-800 shadow-[3px_3px_0px_rgba(34,34,34,1)]"
+                      >
+                        <div className="overflow-hidden gap-1.5 self-stretch px-2 sm:px-3.5 py-1.5 w-full bg-white rounded-md border-neutral-800 shadow-[1px_1px_0px_rgba(34,34,34,1)]">
+                          {item.text}
+                        </div>
+                      </div>
+                    ))}
                   </div>
-                ))}
+                </div>
               </div>
             </div>
 
-            {/* CEFR Levels */}
-            <div className="space-y-4">
-              <h3 className="text-lg sm:text-xl font-bold text-center text-slate-800">
-                {cefrData.label}
-              </h3>
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3 sm:gap-4">
-                {cefrData.items.map((item, index) => (
-                  <div
-                    key={index}
-                    className={`
-											p-4 bg-gradient-to-br ${item.color} rounded-xl text-white
-											shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1
-											group cursor-pointer relative overflow-hidden
-										`}
-                  >
-                    <div className="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                    <div className="relative z-10 text-center">
-                      <div className="text-2xl mb-2">{item.icon}</div>
-                      <div className="font-bold text-sm mb-1">{item.text}</div>
-                      <div className="text-xs opacity-90 mb-1">
-                        {item.subtitle}
+            <div className="flex flex-wrap gap-1 items-start w-full">
+              <div className="text-sm text-sky-900 w-[69px]">Thời lượng</div>
+              <div className="flex flex-1 shrink gap-4 justify-center items-center text-xs text-center text-blue-900 basis-0 min-w-60">
+                <div className="flex flex-col flex-1 shrink justify-center self-stretch my-auto w-full basis-0 min-w-60">
+                  <div className="flex flex-wrap gap-2 items-start w-full">
+                    {durationData.items.map((item, index) => (
+                      <div
+                        key={index}
+                        className="overflow-hidden flex-1 shrink px-1 pt-1 pb-2 bg-cyan-400 rounded-md basis-0 border-neutral-800 shadow-[3px_3px_0px_rgba(34,34,34,1)]"
+                      >
+                        <div className="overflow-hidden gap-1.5 self-stretch px-2 sm:px-3.5 py-1.5 w-full bg-white rounded-md border-neutral-800 shadow-[1px_1px_0px_rgba(34,34,34,1)]">
+                          {item.text}
+                        </div>
                       </div>
-                      <div className="text-[10px] opacity-80">
-                        {item.description}
-                      </div>
-                    </div>
+                    ))}
                   </div>
-                ))}
-              </div>
-            </div>
-
-            {/* Study Duration */}
-            <div className="space-y-4">
-              <h3 className="text-lg sm:text-xl font-bold text-center text-slate-800">
-                {durationData.label}
-              </h3>
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3 sm:gap-4">
-                {durationData.items.map((item, index) => (
-                  <div
-                    key={index}
-                    className={`
-											p-4 bg-gradient-to-br ${item.color} rounded-xl text-white
-											shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1
-											group cursor-pointer relative overflow-hidden
-										`}
-                  >
-                    <div className="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                    <div className="relative z-10 text-center">
-                      <div className="text-2xl mb-2">{item.icon}</div>
-                      <div className="font-bold text-sm mb-1">{item.text}</div>
-                      <div className="text-xs opacity-90 mb-1">
-                        {item.subtitle}
-                      </div>
-                      <div className="text-[10px] opacity-80">
-                        {item.description}
-                      </div>
-                    </div>
-                  </div>
-                ))}
+                </div>
               </div>
             </div>
           </div>
 
           <AchievementBadges badges={achievementBadges} />
-
-          {/* Certificate Comparison */}
-          <CertificateComparison />
 
           {/* Teen-specific features - Mobile Optimized */}
           <div className="grid grid-cols-1 xl:grid-cols-2 gap-6 sm:gap-8 mt-6 sm:mt-8">
