@@ -11,7 +11,7 @@ export default function AboutSection() {
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-4 sm:mb-6">
               Về{" "}
               <span className="bg-gradient-to-r from-[#FFD700] to-[#FFD700] bg-clip-text text-transparent">
-                WOO GROUP
+                chúng tôi
               </span>
             </h2>
 
