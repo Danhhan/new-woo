@@ -173,13 +173,25 @@ export const RoadmapSection: React.FC = () => {
   ];
 
   const cambridgeData = {
-    label: "Cambridge",
+    label: "🎓 Cambridge",
     items: [
-      { text: "A2 KEY", fontSize: "11px" },
-      { text: "B1 PET" },
-      { text: "B2 FIRST" },
-      { text: "C1 ADVANCED" },
-      { text: "C2 PROFICIENCY" },
+      {
+        text: "A2 Key for Schools",
+        icon: "🟢",
+        color: "from-green-400 to-emerald-500",
+      },
+      {
+        text: "B1 PET for Schools",
+        icon: "🔵",
+        color: "from-blue-400 to-cyan-500",
+      },
+      {
+        text: "B2 First for Schools",
+        icon: "🟡",
+        color: "from-yellow-400 to-orange-500",
+      },
+      { text: "C1 Advanced", icon: "🟠", color: "from-orange-400 to-red-500" },
+      { text: "C2 Proficiency", icon: "🔴", color: "from-red-400 to-pink-500" },
     ],
   };
 
