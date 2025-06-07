@@ -24,22 +24,25 @@ export const TeenProgressTracker: React.FC<TeenProgressTrackerProps> = ({
 
       <div className="relative">
         {/* Progress line */}
-        <div className="absolute left-6 top-8 w-0.5 h-full bg-slate-200"></div>
+        <div className="absolute left-4 sm:left-6 top-6 sm:top-8 w-0.5 h-full bg-slate-200"></div>
         <div
-          className="absolute left-6 top-8 w-0.5 bg-gradient-to-b from-purple-500 to-pink-500 transition-all duration-1000 ease-out"
+          className="absolute left-4 sm:left-6 top-6 sm:top-8 w-0.5 bg-gradient-to-b from-purple-500 to-pink-500 transition-all duration-1000 ease-out"
           style={{
             height: `${(steps.filter((s) => s.isCompleted).length / steps.length) * 100}%`,
           }}
         ></div>
 
         {/* Steps */}
-        <div className="space-y-6">
+        <div className="space-y-4 sm:space-y-6">
           {steps.map((step, index) => (
-            <div key={index} className="relative flex items-start space-x-4">
+            <div
+              key={index}
+              className="relative flex items-start space-x-3 sm:space-x-4"
+            >
               {/* Step indicator */}
               <div
                 className={`
-								relative z-10 w-12 h-12 rounded-full flex items-center justify-center font-bold text-sm
+								relative z-10 w-8 sm:w-12 h-8 sm:h-12 rounded-full flex items-center justify-center font-bold text-xs sm:text-sm
 								transition-all duration-300 transform
 								${
                   step.isCompleted
@@ -52,7 +55,7 @@ export const TeenProgressTracker: React.FC<TeenProgressTrackerProps> = ({
               >
                 {step.isCompleted ? (
                   <svg
-                    className="w-6 h-6"
+                    className="w-4 sm:w-6 h-4 sm:h-6"
                     fill="currentColor"
                     viewBox="0 0 20 20"
                   >
