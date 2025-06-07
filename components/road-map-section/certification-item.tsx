@@ -2,38 +2,38 @@
 import * as React from "react";
 
 interface CertificationItem {
-  text: string;
-  fontSize?: string;
+	text: string;
+	fontSize?: string;
 }
 
 interface CertificationRowProps {
-  label: string;
-  items: CertificationItem[];
+	label: string;
+	items: CertificationItem[];
 }
 
 export const CertificationRow: React.FC<CertificationRowProps> = ({
-  label,
-  items,
+	label,
+	items,
 }) => {
-  return (
-    <div className="space-y-2">
-      <div className="text-sm font-bold text-sky-900">{label}</div>
-      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-2">
-        {items.map((item, index) => (
-          <div
-            key={index}
-            className="overflow-hidden px-1 pt-1 pb-2 bg-cyan-400 rounded-md border-neutral-800 shadow-[3px_3px_0px_rgba(34,34,34,1)]"
-          >
-            <div className="overflow-hidden gap-1.5 px-2 py-1.5 w-full bg-white rounded-md border-neutral-800 shadow-[1px_1px_0px_rgba(34,34,34,1)] text-[10px] sm:text-xs text-center text-blue-900">
-              {item.fontSize ? (
-                <span style={{ fontSize: item.fontSize }}>{item.text}</span>
-              ) : (
-                item.text
-              )}
-            </div>
-          </div>
-        ))}
-      </div>
-    </div>
-  );
+	return (
+		<div className="space-y-2">
+			<div className="text-sm font-bold text-sky-900">{label}</div>
+			<div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-2">
+				{items.map((item, index) => (
+					<div
+						key={index}
+						className="overflow-hidden px-1 pt-1 pb-2 bg-cyan-400 rounded-md border-neutral-800 shadow-[3px_3px_0px_rgba(34,34,34,1)]"
+					>
+						<div className="overflow-hidden gap-1.5 px-2 py-1.5 w-full bg-white rounded-md border-neutral-800 shadow-[1px_1px_0px_rgba(34,34,34,1)] text-[10px] sm:text-xs text-center text-blue-900">
+							{item.fontSize ? (
+								<span style={{ fontSize: item.fontSize }}>{item.text}</span>
+							) : (
+								item.text
+							)}
+						</div>
+					</div>
+				))}
+			</div>
+		</div>
+	);
 };
