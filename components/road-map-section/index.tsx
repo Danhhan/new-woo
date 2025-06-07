@@ -355,6 +355,35 @@ export const RoadmapSection: React.FC = () => {
 						<div className="space-y-2">
 							<div className="text-sm font-bold text-sky-900 mb-2">CEFR</div>
 							<div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-2 text-xs text-center text-blue-900">
+								{cefrData.items.map((item, index) => (
+									<div
+										key={index}
+										className="overflow-hidden flex-1 shrink px-1 pt-1 pb-2 bg-cyan-400 rounded-md basis-0 border-neutral-800 shadow-[3px_3px_0px_rgba(34,34,34,1)]"
+									>
+										<div className="overflow-hidden gap-1.5 self-stretch px-2 sm:px-3.5 py-1.5 w-full bg-white rounded-md border-neutral-800 shadow-[1px_1px_0px_rgba(34,34,34,1)]">
+											{item.text}
+										</div>
+									</div>
+								))}
+							</div>
+						</div>
+
+						<div className="space-y-2">
+							<div className="text-sm font-bold text-sky-900 mb-2">Thời lượng</div>
+							<div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-2 text-xs text-center text-blue-900">
+								{durationData.items.map((item, index) => (
+									<div
+										key={index}
+										className="overflow-hidden flex-1 shrink px-1 pt-1 pb-2 bg-cyan-400 rounded-md basis-0 border-neutral-800 shadow-[3px_3px_0px_rgba(34,34,34,1)]"
+									>
+										<div className="overflow-hidden gap-1.5 self-stretch px-2 sm:px-3.5 py-1.5 w-full bg-white rounded-md border-neutral-800 shadow-[1px_1px_0px_rgba(34,34,34,1)]">
+											{item.text}
+										</div>
+									</div>
+								))}
+							</div>
+						</div>
+					</div>
 										{cefrData.items.map((item, index) => (
 											<div
 												key={index}
