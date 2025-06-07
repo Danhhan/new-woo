@@ -7,6 +7,7 @@ import { TeenProgressTracker } from "./teen-progress-tracker";
 import { TeenStudyTips } from "./teen-study-tips";
 import { TeenCTA } from "./teen-cta";
 import { TeenStats } from "./teen-stats";
+import { CertificateComparison } from "./certificate-comparison";
 
 export const RoadmapSection: React.FC = () => {
   const levelData = [
