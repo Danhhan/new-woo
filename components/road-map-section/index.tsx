@@ -206,26 +206,31 @@ export const RoadmapSection: React.FC = () => {
       src: "https://cdn.builder.io/api/v1/image/assets/31c7b1c5a83a4753853375a2754b402c/625af75d4bb3d1bd91db9dc3178aba0afba8958b?placeholderIfAbsent=true",
       aspectRatio: "aspect-[0.73]",
       width: "w-[57px]",
+      title: "IELTS for Schools",
     },
     {
       src: "https://cdn.builder.io/api/v1/image/assets/31c7b1c5a83a4753853375a2754b402c/b85b725901e0cd78d5659f22647bc4740b4b5829?placeholderIfAbsent=true",
       aspectRatio: "aspect-[0.73]",
       width: "w-[57px]",
+      title: "Cambridge B2 First",
     },
     {
       src: "https://cdn.builder.io/api/v1/image/assets/31c7b1c5a83a4753853375a2754b402c/fcdcc224056a76314ed3c045f2859f9fa5e2b283?placeholderIfAbsent=true",
       aspectRatio: "aspect-[0.82]",
       width: "w-16",
+      title: "TOEFL Junior",
     },
     {
       src: "https://cdn.builder.io/api/v1/image/assets/31c7b1c5a83a4753853375a2754b402c/c9ff47b0e5d720847da5730af6e0290621303654?placeholderIfAbsent=true",
       aspectRatio: "aspect-[0.85]",
       width: "w-[66px]",
+      title: "SAT/ACT Prep",
     },
     {
       src: "https://cdn.builder.io/api/v1/image/assets/31c7b1c5a83a4753853375a2754b402c/ab4be5ccc16276ad4f5fb05f5a742e71b956574d?placeholderIfAbsent=true",
       aspectRatio: "aspect-square",
       width: "w-[78px]",
+      title: "Du học - Học bổng",
     },
   ];
 
