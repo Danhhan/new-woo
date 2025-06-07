@@ -12,8 +12,8 @@ export const RoadmapSection: React.FC = () => {
   const levelData = [
     {
       title: "CẤP ĐỘ 1",
-      subtitle: "(Teen Foundation)",
-      backgroundColor: "bg-gradient-to-br from-purple-100 to-pink-100",
+      subtitle: "Teen Foundation",
+      backgroundColor: "bg-gradient-to-br from-[#FFD700]/20 to-[#FFD700]/10",
       skills: [
         {
           iconSrc:
@@ -44,8 +44,8 @@ export const RoadmapSection: React.FC = () => {
     },
     {
       title: "CẤP ĐỘ 2",
-      subtitle: "(Teen Explorer)",
-      backgroundColor: "bg-gradient-to-br from-blue-100 to-cyan-100",
+      subtitle: "Teen Explorer",
+      backgroundColor: "bg-gradient-to-br from-[#083D77]/20 to-[#083D77]/10",
       skills: [
         {
           iconSrc:
@@ -76,8 +76,8 @@ export const RoadmapSection: React.FC = () => {
     },
     {
       title: "CẤP ĐỘ 3",
-      subtitle: "(Teen Leader)",
-      backgroundColor: "bg-gradient-to-br from-green-100 to-emerald-100",
+      subtitle: "Teen Leader",
+      backgroundColor: "bg-gradient-to-br from-[#FFD700]/30 to-[#FFD700]/20",
       skills: [
         {
           iconSrc:
@@ -108,8 +108,8 @@ export const RoadmapSection: React.FC = () => {
     },
     {
       title: "CẤP ĐỘ 4",
-      subtitle: "(Pre-University)",
-      backgroundColor: "bg-gradient-to-br from-orange-100 to-yellow-100",
+      subtitle: "Pre-University",
+      backgroundColor: "bg-gradient-to-br from-[#083D77]/30 to-[#083D77]/20",
       skills: [
         {
           iconSrc:
@@ -129,7 +129,7 @@ export const RoadmapSection: React.FC = () => {
         {
           iconSrc:
             "https://cdn.builder.io/api/v1/image/assets/31c7b1c5a83a4753853375a2754b402c/cd46fe32fee7a7401169cff3bfd64e5f17ad1d60?placeholderIfAbsent=true",
-          text: "Nghiên cứu và làm project về các chủ đề academic",
+          text: "Nghiên cứu và l��m project về các chủ đề academic",
         },
         {
           iconSrc:
@@ -140,8 +140,8 @@ export const RoadmapSection: React.FC = () => {
     },
     {
       title: "CẤP ĐỘ 5",
-      subtitle: "(Global Citizen)",
-      backgroundColor: "bg-gradient-to-br from-indigo-100 to-purple-100",
+      subtitle: "Global Citizen",
+      backgroundColor: "bg-gradient-to-br from-gray-200 to-gray-100",
       skills: [
         {
           iconSrc:
@@ -186,11 +186,11 @@ export const RoadmapSection: React.FC = () => {
   const cefrData = {
     label: "CEFR",
     items: [
-      { text: "🟢 Level A2" },
-      { text: "🔵 Level B1" },
-      { text: "🟡 Level B2" },
-      { text: "🟠 Level C1" },
-      { text: "🔴 Level C2" },
+      { text: "Level A2" },
+      { text: "Level B1" },
+      { text: "Level B2" },
+      { text: "Level C1" },
+      { text: "Level C2" },
     ],
   };
 
@@ -277,55 +277,53 @@ export const RoadmapSection: React.FC = () => {
   ];
 
   return (
-    <section className="relative py-8 sm:py-12 lg:py-16 bg-gradient-to-br from-slate-50 via-purple-50/30 to-pink-50/30 overflow-hidden">
+    <section
+      id="roadmap"
+      className="relative py-8 sm:py-12 lg:py-16 bg-gradient-to-br from-slate-50 via-gray-50 to-blue-50 overflow-hidden"
+    >
       {/* Animated background elements */}
       <div className="absolute inset-0">
-        <div className="absolute top-10 sm:top-20 left-2 sm:left-20 w-16 sm:w-32 h-16 sm:h-32 bg-gradient-to-br from-purple-200/40 to-pink-200/40 rounded-full blur-xl animate-pulse"></div>
-        <div className="absolute top-20 sm:top-40 right-4 sm:right-32 w-12 sm:w-24 h-12 sm:h-24 bg-gradient-to-br from-blue-200/40 to-cyan-200/40 rounded-full blur-lg animate-pulse delay-1000"></div>
-        <div className="absolute bottom-16 sm:bottom-32 left-1/3 w-20 sm:w-40 h-20 sm:h-40 bg-gradient-to-br from-indigo-200/30 to-purple-200/30 rounded-full blur-2xl animate-pulse delay-2000"></div>
+        <div className="absolute top-10 sm:top-20 left-2 sm:left-20 w-16 sm:w-32 h-16 sm:h-32 bg-[#FFD700] rounded-full opacity-10 animate-float"></div>
+        <div className="absolute top-20 sm:top-40 right-4 sm:right-32 w-12 sm:w-24 h-12 sm:h-24 bg-[#083D77] rounded-full opacity-10 animate-float delay-1000"></div>
+        <div className="absolute bottom-16 sm:bottom-32 left-1/3 w-20 sm:w-40 h-20 sm:h-40 bg-[#FFD700] rounded-full opacity-5 animate-float delay-2000"></div>
       </div>
-      <img
-        src="https://cdn.builder.io/api/v1/image/assets/31c7b1c5a83a4753853375a2754b402c/908b52567c05761a61c0979fd65758b228ed742f?placeholderIfAbsent=true"
-        className="object-contain absolute bottom-0 left-2/4 z-0 -translate-x-2/4 aspect-[1.14] h-[300px] sm:h-[600px] lg:h-[840px] translate-y-[0%] w-[300px] sm:w-[600px] lg:w-[800px] opacity-10"
-        alt=""
-      />
 
       <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 relative z-10">
         {/* Mobile-First Header */}
         <header className="text-center mb-6 sm:mb-8">
-          <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-black bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 bg-clip-text text-transparent leading-tight mb-3 sm:mb-4">
+          <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-black bg-gradient-to-r from-[#083D77] via-[#083D77] to-[#FFD700] bg-clip-text text-transparent leading-tight mb-3 sm:mb-4">
             LỘ TRÌNH HỌC DÀNH CHO TEENS
           </h1>
-          <p className="text-sm sm:text-base lg:text-lg text-slate-600 font-medium mb-4">
-            🚀 Từ Zero đến Hero - Chinh phục tiếng Anh cùng thế hệ Gen Z!
+          <p className="text-sm sm:text-base lg:text-lg text-gray-600 font-medium mb-4">
+            Từ Zero đến Hero - Chinh phục tiếng Anh cùng thế hệ Gen Z
           </p>
 
           {/* Compact Badge Section */}
           <div className="flex flex-wrap justify-center items-center gap-2 sm:gap-4 mb-4">
             <div className="flex flex-wrap justify-center gap-2">
-              <span className="px-2 py-1 bg-gradient-to-r from-purple-100 to-pink-100 rounded-full text-xs font-semibold text-purple-700">
-                📚 Lớp 6-12
+              <span className="px-2 py-1 bg-[#FFD700]/20 text-[#083D77] rounded-full text-xs font-semibold">
+                Lớp 6-12
               </span>
-              <span className="px-2 py-1 bg-gradient-to-r from-blue-100 to-cyan-100 rounded-full text-xs font-semibold text-blue-700">
-                🎯 Du học - Chứng chỉ
+              <span className="px-2 py-1 bg-[#083D77]/20 text-[#083D77] rounded-full text-xs font-semibold">
+                Du học - Chứng chỉ
               </span>
-              <span className="px-2 py-1 bg-gradient-to-r from-green-100 to-emerald-100 rounded-full text-xs font-semibold text-green-700">
-                ⚡ 1 kèm 1 Online
+              <span className="px-2 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-semibold">
+                1 kèm 1 Online
               </span>
             </div>
 
             {/* Logo */}
             <div className="flex gap-2 items-center">
-              <div className="flex overflow-hidden flex-col justify-center items-center bg-gradient-to-br from-yellow-400 to-orange-400 h-8 sm:h-10 rounded-full w-8 sm:w-10 shadow-lg">
+              <div className="flex overflow-hidden flex-col justify-center items-center bg-gradient-to-br from-[#FFD700] to-[#FFD700] h-8 sm:h-10 rounded-full w-8 sm:w-10 shadow-lg">
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets/31c7b1c5a83a4753853375a2754b402c/7fe39650d3675ad48497574ab2254dab7be7286e?placeholderIfAbsent=true"
                   className="object-contain aspect-[1.43] w-5 sm:w-6"
                   alt=""
                 />
               </div>
-              <div className="text-xs font-bold text-slate-700 hidden sm:block">
+              <div className="text-xs font-bold text-[#083D77] hidden sm:block">
                 <div>Wings of</div>
-                <div className="text-indigo-600">Opportunity</div>
+                <div className="text-[#FFD700]">Opportunity</div>
               </div>
             </div>
           </div>
@@ -353,14 +351,14 @@ export const RoadmapSection: React.FC = () => {
             />
 
             <div className="space-y-2">
-              <div className="text-sm font-bold text-sky-900">CEFR</div>
+              <div className="text-sm font-bold text-[#083D77]">CEFR</div>
               <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-2">
                 {cefrData.items.map((item, index) => (
                   <div
                     key={index}
-                    className="overflow-hidden px-1 pt-1 pb-2 bg-cyan-400 rounded-md border-neutral-800 shadow-[3px_3px_0px_rgba(34,34,34,1)]"
+                    className="overflow-hidden px-1 pt-1 pb-2 bg-[#FFD700] rounded-md border-neutral-800 shadow-[3px_3px_0px_rgba(34,34,34,1)]"
                   >
-                    <div className="overflow-hidden gap-1.5 px-2 py-1.5 w-full bg-white rounded-md border-neutral-800 shadow-[1px_1px_0px_rgba(34,34,34,1)] text-[10px] sm:text-xs text-center text-blue-900">
+                    <div className="overflow-hidden gap-1.5 px-2 py-1.5 w-full bg-white rounded-md border-neutral-800 shadow-[1px_1px_0px_rgba(34,34,34,1)] text-[10px] sm:text-xs text-center text-[#083D77]">
                       {item.text}
                     </div>
                   </div>
@@ -369,14 +367,14 @@ export const RoadmapSection: React.FC = () => {
             </div>
 
             <div className="space-y-2">
-              <div className="text-sm font-bold text-sky-900">Thời lượng</div>
+              <div className="text-sm font-bold text-[#083D77]">Thời lượng</div>
               <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-2">
                 {durationData.items.map((item, index) => (
                   <div
                     key={index}
-                    className="overflow-hidden px-1 pt-1 pb-2 bg-cyan-400 rounded-md border-neutral-800 shadow-[3px_3px_0px_rgba(34,34,34,1)]"
+                    className="overflow-hidden px-1 pt-1 pb-2 bg-[#083D77] rounded-md border-neutral-800 shadow-[3px_3px_0px_rgba(34,34,34,1)]"
                   >
-                    <div className="overflow-hidden gap-1.5 px-2 py-1.5 w-full bg-white rounded-md border-neutral-800 shadow-[1px_1px_0px_rgba(34,34,34,1)] text-[10px] sm:text-xs text-center text-blue-900">
+                    <div className="overflow-hidden gap-1.5 px-2 py-1.5 w-full bg-white rounded-md border-neutral-800 shadow-[1px_1px_0px_rgba(34,34,34,1)] text-[10px] sm:text-xs text-center text-[#083D77]">
                       {item.text}
                     </div>
                   </div>
@@ -397,12 +395,6 @@ export const RoadmapSection: React.FC = () => {
           <TeenCTA />
         </main>
       </div>
-
-      <img
-        src="https://cdn.builder.io/api/v1/image/assets/31c7b1c5a83a4753853375a2754b402c/7c7df2b82b9b6f495a354806f8b5fe612a2ce08d?placeholderIfAbsent=true"
-        className="object-contain absolute z-0 shrink-0 aspect-[1.21] bottom-[321px] h-[34px] left-[98px] w-[41px] hidden lg:block"
-        alt=""
-      />
     </section>
   );
 };
