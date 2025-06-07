@@ -87,7 +87,7 @@ export const RoadmapSection: React.FC = () => {
         {
           iconSrc:
             "https://cdn.builder.io/api/v1/image/assets/31c7b1c5a83a4753853375a2754b402c/76815c865f75a4cdc28d9c6207116248abf4b493?placeholderIfAbsent=true",
-          text: "Tham gia debate và cuộc thi hùng biện ti���ng Anh",
+          text: "Tham gia debate và cuộc thi hùng biện tiếng Anh",
         },
         {
           iconSrc:
@@ -352,11 +352,11 @@ export const RoadmapSection: React.FC = () => {
               />
             </div>
 
-            <div className="flex flex-wrap gap-1 items-start mt-8 w-full max-md:max-w-full">
+            <div className="flex flex-wrap gap-1 items-start mt-8 w-full">
               <div className="text-sm text-sky-900 w-[69px]">CEFR</div>
-              <div className="flex flex-1 shrink gap-4 justify-center items-center text-xs text-center text-blue-900 basis-0 min-w-60 max-md:max-w-full">
-                <div className="flex flex-col flex-1 shrink justify-center self-stretch my-auto w-full basis-0 min-w-60 max-md:max-w-full">
-                  <div className="flex flex-wrap gap-2 items-start w-full max-md:max-w-full">
+              <div className="flex flex-1 shrink gap-4 justify-center items-center text-xs text-center text-blue-900 basis-0 min-w-60">
+                <div className="flex flex-col flex-1 shrink justify-center self-stretch my-auto w-full basis-0 min-w-60">
+                  <div className="flex flex-wrap gap-2 items-start w-full">
                     {cefrData.items.map((item, index) => (
                       <div
                         key={index}
