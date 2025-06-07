@@ -70,7 +70,7 @@ export const RoadmapSection: React.FC = () => {
         {
           iconSrc:
             "https://cdn.builder.io/api/v1/image/assets/31c7b1c5a83a4753853375a2754b402c/ca501de2c0aaf3780f4cdaa7b9d13704cfe9362e?placeholderIfAbsent=true",
-          text: "Đạt điểm cao trong các bài kiểm tra tiếng Anh ở trường",
+          text: "Đạt điểm cao trong c��c bài kiểm tra tiếng Anh ở trường",
         },
       ],
     },
@@ -297,7 +297,7 @@ export const RoadmapSection: React.FC = () => {
               LỘ TRÌNH HỌC DÀNH CHO TEENS
             </h1>
             <p className="text-sm sm:text-base text-slate-600 font-medium mt-2 px-4">
-              🚀 Từ Zero đến Hero - Chinh ph��c tiếng Anh cùng thế hệ Gen Z!
+              🚀 Từ Zero đến Hero - Chinh phục tiếng Anh cùng thế hệ Gen Z!
             </p>
           </div>
 
@@ -344,8 +344,8 @@ export const RoadmapSection: React.FC = () => {
             ))}
           </div>
 
-          {/* Certification Section - Simple Design */}
-          <div className="mt-6 sm:mt-8 w-full font-extrabold space-y-4 sm:space-y-6">
+          {/* Certification Section - Mobile Optimized */}
+          <div className="mt-4 sm:mt-6 w-full font-extrabold space-y-3 sm:space-y-4">
             <div className="space-y-2">
               <CertificationRow
                 label={cambridgeData.label}
@@ -353,42 +353,40 @@ export const RoadmapSection: React.FC = () => {
               />
             </div>
 
-            <div className="flex flex-wrap gap-1 items-start w-full">
-              <div className="text-sm text-sky-900 w-[69px]">CEFR</div>
-              <div className="flex flex-1 shrink gap-4 justify-center items-center text-xs text-center text-blue-900 basis-0 min-w-60">
-                <div className="flex flex-col flex-1 shrink justify-center self-stretch my-auto w-full basis-0 min-w-60">
-                  <div className="flex flex-wrap gap-2 items-start w-full">
-                    {cefrData.items.map((item, index) => (
-                      <div
-                        key={index}
-                        className="overflow-hidden flex-1 shrink px-1 pt-1 pb-2 bg-cyan-400 rounded-md basis-0 border-neutral-800 shadow-[3px_3px_0px_rgba(34,34,34,1)]"
-                      >
-                        <div className="overflow-hidden gap-1.5 self-stretch px-2 sm:px-3.5 py-1.5 w-full bg-white rounded-md border-neutral-800 shadow-[1px_1px_0px_rgba(34,34,34,1)]">
-                          {item.text}
-                        </div>
+            <div className="space-y-2">
+              <div className="text-sm text-sky-900 px-2 sm:px-0">CEFR</div>
+              <div className="px-2 sm:px-0">
+                <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-1.5 sm:gap-2 text-xs text-center text-blue-900">
+                  {cefrData.items.map((item, index) => (
+                    <div
+                      key={index}
+                      className="overflow-hidden px-1 pt-1 pb-2 bg-cyan-400 rounded-md border-neutral-800 shadow-[3px_3px_0px_rgba(34,34,34,1)]"
+                    >
+                      <div className="overflow-hidden gap-1.5 px-1.5 sm:px-2 py-1.5 w-full bg-white rounded-md border-neutral-800 shadow-[1px_1px_0px_rgba(34,34,34,1)] text-[10px] sm:text-xs">
+                        {item.text}
                       </div>
-                    ))}
-                  </div>
+                    </div>
+                  ))}
                 </div>
               </div>
             </div>
 
-            <div className="flex flex-wrap gap-1 items-start w-full">
-              <div className="text-sm text-sky-900 w-[69px]">Thời lượng</div>
-              <div className="flex flex-1 shrink gap-4 justify-center items-center text-xs text-center text-blue-900 basis-0 min-w-60">
-                <div className="flex flex-col flex-1 shrink justify-center self-stretch my-auto w-full basis-0 min-w-60">
-                  <div className="flex flex-wrap gap-2 items-start w-full">
-                    {durationData.items.map((item, index) => (
-                      <div
-                        key={index}
-                        className="overflow-hidden flex-1 shrink px-1 pt-1 pb-2 bg-cyan-400 rounded-md basis-0 border-neutral-800 shadow-[3px_3px_0px_rgba(34,34,34,1)]"
-                      >
-                        <div className="overflow-hidden gap-1.5 self-stretch px-2 sm:px-3.5 py-1.5 w-full bg-white rounded-md border-neutral-800 shadow-[1px_1px_0px_rgba(34,34,34,1)]">
-                          {item.text}
-                        </div>
+            <div className="space-y-2">
+              <div className="text-sm text-sky-900 px-2 sm:px-0">
+                Thời lượng
+              </div>
+              <div className="px-2 sm:px-0">
+                <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-1.5 sm:gap-2 text-xs text-center text-blue-900">
+                  {durationData.items.map((item, index) => (
+                    <div
+                      key={index}
+                      className="overflow-hidden px-1 pt-1 pb-2 bg-cyan-400 rounded-md border-neutral-800 shadow-[3px_3px_0px_rgba(34,34,34,1)]"
+                    >
+                      <div className="overflow-hidden gap-1.5 px-1.5 sm:px-2 py-1.5 w-full bg-white rounded-md border-neutral-800 shadow-[1px_1px_0px_rgba(34,34,34,1)] text-[10px] sm:text-xs">
+                        {item.text}
                       </div>
-                    ))}
-                  </div>
+                    </div>
+                  ))}
                 </div>
               </div>
             </div>
