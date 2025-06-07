@@ -290,7 +290,7 @@ export const RoadmapSection: React.FC = () => {
         alt=""
       />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8 relative z-10">
         <header className="flex flex-col space-y-4 w-full mb-4 sm:mb-6">
           <div className="text-center">
             <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-black bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 bg-clip-text text-transparent leading-tight px-2">
