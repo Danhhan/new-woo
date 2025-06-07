@@ -35,7 +35,7 @@ export const TeenStats: React.FC = () => {
     <div className="mt-6 sm:mt-8 p-4 sm:p-6 bg-white/90 backdrop-blur-sm rounded-xl shadow-lg">
       <h3 className="text-lg sm:text-2xl font-bold text-center mb-6 sm:mb-8">
         <span className="bg-gradient-to-r from-[#083D77] to-[#FFD700] bg-clip-text text-transparent">
-          Thành tích của các Teen WOO
+          Thành tích của các Teen
         </span>
       </h3>
 
@@ -53,7 +53,7 @@ export const TeenStats: React.FC = () => {
             </div>
             <div
               className={`
-							text-3xl font-black mb-2 
+							text-3xl font-black mb-2
 							bg-gradient-to-br ${stat.color} bg-clip-text text-transparent
 							group-hover:scale-105 transition-transform duration-300
 						`}
