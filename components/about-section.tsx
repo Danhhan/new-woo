@@ -20,7 +20,7 @@ export default function AboutSection() {
             </h3>
 
             <p className="text-base sm:text-lg text-gray-600 leading-relaxed mb-6 sm:mb-8 animate-fadeInLeft delay-300">
-              WOO Group chuyên đào tạo tiếng Anh 1 kèm 1 online, đặc biệt tập
+              Chúng tôi chuyên đào tạo tiếng Anh 1 kèm 1 online, đặc biệt tập
               trung vào <strong>teens (12-18 tuổi)</strong>. Với phương pháp học
               hiện đại và giáo viên kinh nghiệm, chúng tôi cam kết giúp bạn
               <strong className="text-[#083D77]">
