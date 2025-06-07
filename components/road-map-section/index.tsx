@@ -3,6 +3,10 @@ import * as React from "react";
 import { LevelCard } from "./level-card";
 import { CertificationRow } from "./certification-item";
 import { AchievementBadges } from "./achievement-badges";
+import { TeenProgressTracker } from "./teen-progress-tracker";
+import { TeenStudyTips } from "./teen-study-tips";
+import { TeenCTA } from "./teen-cta";
+import { TeenStats } from "./teen-stats";
 
 export const RoadmapSection: React.FC = () => {
   const levelData = [
@@ -201,6 +205,44 @@ export const RoadmapSection: React.FC = () => {
     ],
   };
 
+  const progressSteps = [
+    {
+      step: 1,
+      title: "Foundation Level",
+      description: "Làm quen với tiếng Anh cơ bản, xây dựng nền tảng vững chắc",
+      isCompleted: true,
+      isActive: false,
+    },
+    {
+      step: 2,
+      title: "Explorer Level",
+      description: "Khám phá thế giới qua tiếng Anh, giao tiếp tự tin hơn",
+      isCompleted: true,
+      isActive: false,
+    },
+    {
+      step: 3,
+      title: "Leader Level",
+      description: "Phát triển kỹ năng thuyết trình và tranh luận",
+      isCompleted: false,
+      isActive: true,
+    },
+    {
+      step: 4,
+      title: "Pre-University",
+      description: "Chuẩn bị cho đại học và các kỳ thi quốc tế",
+      isCompleted: false,
+      isActive: false,
+    },
+    {
+      step: 5,
+      title: "Global Citizen",
+      description: "Thành thạo tiếng Anh như người bản ngữ",
+      isCompleted: false,
+      isActive: false,
+    },
+  ];
+
   const achievementBadges = [
     {
       src: "https://cdn.builder.io/api/v1/image/assets/31c7b1c5a83a4753853375a2754b402c/625af75d4bb3d1bd91db9dc3178aba0afba8958b?placeholderIfAbsent=true",
@@ -235,7 +277,7 @@ export const RoadmapSection: React.FC = () => {
   ];
 
   return (
-    <section className="flex overflow-hidden relative items-start py-16 bg-gradient-to-br from-slate-50 via-purple-50/30 to-pink-50/30">
+    <section className="relative py-16 bg-gradient-to-br from-slate-50 via-purple-50/30 to-pink-50/30 overflow-hidden">
       {/* Animated background elements */}
       <div className="absolute inset-0">
         <div className="absolute top-20 left-20 w-32 h-32 bg-gradient-to-br from-purple-200/40 to-pink-200/40 rounded-full blur-xl animate-pulse"></div>
@@ -247,7 +289,8 @@ export const RoadmapSection: React.FC = () => {
         className="object-contain absolute bottom-0 left-2/4 z-0 -translate-x-2/4 aspect-[1.14] h-[840px] translate-y-[0%] w-[800px] max-md:max-w-full opacity-10"
         alt=""
       />
-      <div className="z-0 self-stretch my-auto w-[800px] max-md:max-w-full">
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <header className="flex flex-wrap justify-between items-center px-10 w-full max-md:px-5 max-md:max-w-full mb-8">
           <div className="flex-1 shrink self-stretch my-auto basis-0 min-w-60 max-md:max-w-full">
             <div className="flex flex-col items-start w-full max-md:max-w-full">
@@ -351,6 +394,18 @@ export const RoadmapSection: React.FC = () => {
           </div>
 
           <AchievementBadges badges={achievementBadges} />
+
+          {/* Teen-specific features */}
+          <div className="grid lg:grid-cols-2 gap-8 mt-8">
+            <TeenProgressTracker steps={progressSteps} />
+            <TeenStudyTips />
+          </div>
+
+          {/* Teen Statistics */}
+          <TeenStats />
+
+          {/* Call to Action for Teens */}
+          <TeenCTA />
         </main>
       </div>
 
