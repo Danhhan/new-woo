@@ -242,32 +242,41 @@ export const RoadmapSection: React.FC = () => {
         alt=""
       />
       <div className="z-0 self-stretch my-auto w-[800px] max-md:max-w-full">
-        <header className="flex flex-wrap justify-between items-center px-10 w-full max-md:px-5 max-md:max-w-full">
-          <div className="flex-1 shrink self-stretch my-auto text-3xl font-extrabold text-sky-900 basis-0 min-w-60 max-md:max-w-full">
+        <header className="flex flex-wrap justify-between items-center px-10 w-full max-md:px-5 max-md:max-w-full mb-8">
+          <div className="flex-1 shrink self-stretch my-auto basis-0 min-w-60 max-md:max-w-full">
             <div className="flex flex-col items-start w-full max-md:max-w-full">
-              <h1 className="gap-2.5 max-md:max-w-full">
+              <h1 className="text-4xl font-black bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 bg-clip-text text-transparent max-md:max-w-full max-md:text-3xl">
                 LỘ TRÌNH HỌC DÀNH CHO TEENS
               </h1>
-              <img
-                src="https://cdn.builder.io/api/v1/image/assets/31c7b1c5a83a4753853375a2754b402c/a3f10b8b79a0235821fc9aca96b22509a2168b13?placeholderIfAbsent=true"
-                className="object-contain aspect-[5.32] w-[85px]"
-                alt=""
-              />
+              <p className="text-lg text-slate-600 font-medium mt-2 max-md:text-base">
+                🚀 Từ Zero đến Hero - Chinh phục tiếng Anh cùng thế hệ Gen Z!
+              </p>
+              <div className="flex gap-3 mt-4">
+                <div className="px-3 py-1 bg-gradient-to-r from-purple-100 to-pink-100 rounded-full text-sm font-semibold text-purple-700">
+                  📚 Lớp 6-12
+                </div>
+                <div className="px-3 py-1 bg-gradient-to-r from-blue-100 to-cyan-100 rounded-full text-sm font-semibold text-blue-700">
+                  🎯 Du học - Chứng chỉ
+                </div>
+                <div className="px-3 py-1 bg-gradient-to-r from-green-100 to-emerald-100 rounded-full text-sm font-semibold text-green-700">
+                  ⚡ 1 kèm 1 Online
+                </div>
+              </div>
             </div>
           </div>
           <div className="flex gap-3.5 items-center self-stretch my-auto">
             <div className="flex gap-2.5 items-center self-stretch my-auto">
-              <div className="flex overflow-hidden flex-col justify-center items-center self-stretch pr-2 pl-2 my-auto bg-yellow-400 h-[58px] min-h-[58px] rounded-[34.091px] w-[58px]">
+              <div className="flex overflow-hidden flex-col justify-center items-center self-stretch pr-2 pl-2 my-auto bg-gradient-to-br from-yellow-400 to-orange-400 h-[58px] min-h-[58px] rounded-full w-[58px] shadow-lg hover:shadow-xl transition-shadow duration-300">
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets/31c7b1c5a83a4753853375a2754b402c/7fe39650d3675ad48497574ab2254dab7be7286e?placeholderIfAbsent=true"
                   className="object-contain aspect-[1.43] w-[43px]"
                   alt=""
                 />
               </div>
-              <div className="self-stretch my-auto text-sm text-sky-900 border-indigo-900">
+              <div className="self-stretch my-auto text-sm font-bold text-slate-700">
                 Wings of
                 <br />
-                Opportunity
+                <span className="text-indigo-600">Opportunity</span>
               </div>
             </div>
           </div>
