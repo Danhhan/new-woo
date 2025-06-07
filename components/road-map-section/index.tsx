@@ -235,10 +235,16 @@ export const RoadmapSection: React.FC = () => {
   ];
 
   return (
-    <section className="flex overflow-hidden relative items-start py-10">
+    <section className="flex overflow-hidden relative items-start py-16 bg-gradient-to-br from-slate-50 via-purple-50/30 to-pink-50/30">
+      {/* Animated background elements */}
+      <div className="absolute inset-0">
+        <div className="absolute top-20 left-20 w-32 h-32 bg-gradient-to-br from-purple-200/40 to-pink-200/40 rounded-full blur-xl animate-pulse"></div>
+        <div className="absolute top-40 right-32 w-24 h-24 bg-gradient-to-br from-blue-200/40 to-cyan-200/40 rounded-full blur-lg animate-pulse delay-1000"></div>
+        <div className="absolute bottom-32 left-1/3 w-40 h-40 bg-gradient-to-br from-indigo-200/30 to-purple-200/30 rounded-full blur-2xl animate-pulse delay-2000"></div>
+      </div>
       <img
         src="https://cdn.builder.io/api/v1/image/assets/31c7b1c5a83a4753853375a2754b402c/908b52567c05761a61c0979fd65758b228ed742f?placeholderIfAbsent=true"
-        className="object-contain absolute bottom-0 left-2/4 z-0 -translate-x-2/4 aspect-[1.14] h-[840px] translate-y-[0%] w-[800px] max-md:max-w-full"
+        className="object-contain absolute bottom-0 left-2/4 z-0 -translate-x-2/4 aspect-[1.14] h-[840px] translate-y-[0%] w-[800px] max-md:max-w-full opacity-10"
         alt=""
       />
       <div className="z-0 self-stretch my-auto w-[800px] max-md:max-w-full">
