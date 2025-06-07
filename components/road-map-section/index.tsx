@@ -422,59 +422,90 @@ export const RoadmapSection: React.FC = () => {
             ))}
           </div>
 
-          {/* Certification Section - Mobile Optimized */}
-          <div className="mt-6 sm:mt-8 w-full font-extrabold space-y-4 sm:space-y-6">
-            {/* Cambridge Row */}
-            <div className="space-y-2">
-              <div className="text-sm font-bold text-sky-900">Cambridge</div>
-              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-2 text-xs text-center text-blue-900">
+          {/* Modern Certification Section */}
+          <div className="mt-6 sm:mt-8 w-full space-y-6 sm:space-y-8">
+            {/* Cambridge Certificates */}
+            <div className="space-y-4">
+              <h3 className="text-lg sm:text-xl font-bold text-center text-slate-800">
+                {cambridgeData.label}
+              </h3>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3 sm:gap-4">
                 {cambridgeData.items.map((item, index) => (
                   <div
                     key={index}
-                    className="overflow-hidden px-1 pt-1 pb-2 bg-cyan-400 rounded-md border-neutral-800 shadow-[3px_3px_0px_rgba(34,34,34,1)]"
+                    className={`
+											p-4 bg-gradient-to-br ${item.color} rounded-xl text-white
+											shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1
+											group cursor-pointer relative overflow-hidden
+										`}
                   >
-                    <div className="overflow-hidden gap-1.5 px-2 sm:px-3.5 py-1.5 w-full bg-white rounded-md border-neutral-800 shadow-[1px_1px_0px_rgba(34,34,34,1)]">
-                      {item.fontSize ? (
-                        <span style={{ fontSize: item.fontSize }}>
-                          {item.text}
-                        </span>
-                      ) : (
-                        item.text
-                      )}
+                    <div className="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    <div className="relative z-10 text-center">
+                      <div className="text-2xl mb-2">{item.icon}</div>
+                      <div className="font-bold text-sm mb-1">{item.text}</div>
+                      <div className="text-xs opacity-90">Teens Certified</div>
                     </div>
                   </div>
                 ))}
               </div>
             </div>
 
-            {/* CEFR Row */}
-            <div className="space-y-2">
-              <div className="text-sm font-bold text-sky-900">CEFR</div>
-              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-2 text-xs text-center text-blue-900">
+            {/* CEFR Levels */}
+            <div className="space-y-4">
+              <h3 className="text-lg sm:text-xl font-bold text-center text-slate-800">
+                {cefrData.label}
+              </h3>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3 sm:gap-4">
                 {cefrData.items.map((item, index) => (
                   <div
                     key={index}
-                    className="overflow-hidden px-1 pt-1 pb-2 bg-cyan-400 rounded-md border-neutral-800 shadow-[3px_3px_0px_rgba(34,34,34,1)]"
+                    className={`
+											p-4 bg-gradient-to-br ${item.color} rounded-xl text-white
+											shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1
+											group cursor-pointer relative overflow-hidden
+										`}
                   >
-                    <div className="overflow-hidden gap-1.5 px-2 sm:px-3.5 py-1.5 w-full bg-white rounded-md border-neutral-800 shadow-[1px_1px_0px_rgba(34,34,34,1)]">
-                      {item.text}
+                    <div className="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    <div className="relative z-10 text-center">
+                      <div className="text-2xl mb-2">{item.icon}</div>
+                      <div className="font-bold text-sm mb-1">{item.text}</div>
+                      <div className="text-xs opacity-90 mb-1">
+                        {item.subtitle}
+                      </div>
+                      <div className="text-[10px] opacity-80">
+                        {item.description}
+                      </div>
                     </div>
                   </div>
                 ))}
               </div>
             </div>
 
-            {/* Duration Row */}
-            <div className="space-y-2">
-              <div className="text-sm font-bold text-sky-900">Thời lượng</div>
-              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-2 text-xs text-center text-blue-900">
+            {/* Study Duration */}
+            <div className="space-y-4">
+              <h3 className="text-lg sm:text-xl font-bold text-center text-slate-800">
+                {durationData.label}
+              </h3>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3 sm:gap-4">
                 {durationData.items.map((item, index) => (
                   <div
                     key={index}
-                    className="overflow-hidden px-1 pt-1 pb-2 bg-cyan-400 rounded-md border-neutral-800 shadow-[3px_3px_0px_rgba(34,34,34,1)]"
+                    className={`
+											p-4 bg-gradient-to-br ${item.color} rounded-xl text-white
+											shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1
+											group cursor-pointer relative overflow-hidden
+										`}
                   >
-                    <div className="overflow-hidden gap-1.5 px-2 sm:px-3.5 py-1.5 w-full bg-white rounded-md border-neutral-800 shadow-[1px_1px_0px_rgba(34,34,34,1)]">
-                      {item.text}
+                    <div className="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    <div className="relative z-10 text-center">
+                      <div className="text-2xl mb-2">{item.icon}</div>
+                      <div className="font-bold text-sm mb-1">{item.text}</div>
+                      <div className="text-xs opacity-90 mb-1">
+                        {item.subtitle}
+                      </div>
+                      <div className="text-[10px] opacity-80">
+                        {item.description}
+                      </div>
                     </div>
                   </div>
                 ))}
