@@ -2,10 +2,11 @@
 import * as React from "react";
 
 interface Badge {
-  src: string;
-  aspectRatio: string;
-  width: string;
-  title?: string;
+  icon: string;
+  title: string;
+  subtitle: string;
+  color: string;
+  description: string;
 }
 
 interface AchievementBadgesProps {
