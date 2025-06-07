@@ -129,7 +129,7 @@ export const RoadmapSection: React.FC = () => {
         {
           iconSrc:
             "https://cdn.builder.io/api/v1/image/assets/31c7b1c5a83a4753853375a2754b402c/cd46fe32fee7a7401169cff3bfd64e5f17ad1d60?placeholderIfAbsent=true",
-          text: "Nghiên cứu và l��m project về các chủ đề academic",
+          text: "Nghiên cứu và làm project về các chủ đề academic",
         },
         {
           iconSrc:
@@ -314,17 +314,11 @@ export const RoadmapSection: React.FC = () => {
 
             {/* Logo */}
             <div className="flex gap-2 items-center">
-              <div className="flex overflow-hidden flex-col justify-center items-center bg-gradient-to-br from-[#FFD700] to-[#FFD700] h-8 sm:h-10 rounded-full w-8 sm:w-10 shadow-lg">
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets/31c7b1c5a83a4753853375a2754b402c/7fe39650d3675ad48497574ab2254dab7be7286e?placeholderIfAbsent=true"
-                  className="object-contain aspect-[1.43] w-5 sm:w-6"
-                  alt=""
-                />
-              </div>
-              <div className="text-xs font-bold text-[#083D77] hidden sm:block">
-                <div>Wings of</div>
-                <div className="text-[#FFD700]">Opportunity</div>
-              </div>
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets/31c7b1c5a83a4753853375a2754b402c/7fe39650d3675ad48497574ab2254dab7be7286e?placeholderIfAbsent=true"
+                alt="WOO GROUP Logo"
+                className="h-8 sm:h-10 w-auto object-contain"
+              />
             </div>
           </div>
         </header>
