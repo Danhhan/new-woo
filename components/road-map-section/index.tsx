@@ -291,38 +291,38 @@ export const RoadmapSection: React.FC = () => {
       />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <header className="flex flex-wrap justify-between items-center w-full mb-8">
-          <div className="flex-1 shrink self-stretch my-auto basis-0 min-w-60">
-            <div className="flex flex-col items-start w-full">
-              <h1 className="text-4xl font-black bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 bg-clip-text text-transparent lg:text-4xl md:text-3xl sm:text-2xl text-xl">
+        <header className="flex flex-col lg:flex-row lg:justify-between lg:items-center w-full mb-6 sm:mb-8 space-y-4 lg:space-y-0">
+          <div className="flex-1 text-center lg:text-left">
+            <div className="flex flex-col items-center lg:items-start w-full">
+              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-black bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 bg-clip-text text-transparent leading-tight">
                 LỘ TRÌNH HỌC DÀNH CHO TEENS
               </h1>
-              <p className="lg:text-lg md:text-base sm:text-sm text-sm text-slate-600 font-medium mt-2">
+              <p className="text-sm sm:text-base lg:text-lg text-slate-600 font-medium mt-2 max-w-md lg:max-w-none">
                 🚀 Từ Zero đến Hero - Chinh phục tiếng Anh cùng thế hệ Gen Z!
               </p>
-              <div className="flex flex-wrap gap-2 mt-4">
-                <div className="px-3 py-1 bg-gradient-to-r from-purple-100 to-pink-100 rounded-full text-xs sm:text-sm font-semibold text-purple-700">
+              <div className="flex flex-wrap justify-center lg:justify-start gap-2 mt-3 sm:mt-4">
+                <div className="px-2 sm:px-3 py-1 bg-gradient-to-r from-purple-100 to-pink-100 rounded-full text-xs font-semibold text-purple-700">
                   📚 Lớp 6-12
                 </div>
-                <div className="px-3 py-1 bg-gradient-to-r from-blue-100 to-cyan-100 rounded-full text-xs sm:text-sm font-semibold text-blue-700">
+                <div className="px-2 sm:px-3 py-1 bg-gradient-to-r from-blue-100 to-cyan-100 rounded-full text-xs font-semibold text-blue-700">
                   🎯 Du học - Chứng chỉ
                 </div>
-                <div className="px-3 py-1 bg-gradient-to-r from-green-100 to-emerald-100 rounded-full text-xs sm:text-sm font-semibold text-green-700">
+                <div className="px-2 sm:px-3 py-1 bg-gradient-to-r from-green-100 to-emerald-100 rounded-full text-xs font-semibold text-green-700">
                   ⚡ 1 kèm 1 Online
                 </div>
               </div>
             </div>
           </div>
-          <div className="flex gap-3.5 items-center self-stretch my-auto">
-            <div className="flex gap-2.5 items-center self-stretch my-auto">
-              <div className="flex overflow-hidden flex-col justify-center items-center self-stretch pr-2 pl-2 my-auto bg-gradient-to-br from-yellow-400 to-orange-400 h-[48px] sm:h-[58px] min-h-[48px] sm:min-h-[58px] rounded-full w-[48px] sm:w-[58px] shadow-lg hover:shadow-xl transition-shadow duration-300">
+          <div className="flex justify-center lg:justify-end items-center">
+            <div className="flex gap-2 sm:gap-2.5 items-center">
+              <div className="flex overflow-hidden flex-col justify-center items-center bg-gradient-to-br from-yellow-400 to-orange-400 h-[40px] sm:h-[48px] lg:h-[58px] rounded-full w-[40px] sm:w-[48px] lg:w-[58px] shadow-lg hover:shadow-xl transition-shadow duration-300">
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets/31c7b1c5a83a4753853375a2754b402c/7fe39650d3675ad48497574ab2254dab7be7286e?placeholderIfAbsent=true"
-                  className="object-contain aspect-[1.43] w-[35px] sm:w-[43px]"
+                  className="object-contain aspect-[1.43] w-[28px] sm:w-[35px] lg:w-[43px]"
                   alt=""
                 />
               </div>
-              <div className="self-stretch my-auto text-xs sm:text-sm font-bold text-slate-700">
+              <div className="text-xs sm:text-sm font-bold text-slate-700 text-center lg:text-left">
                 Wings of
                 <br />
                 <span className="text-indigo-600">Opportunity</span>
