@@ -87,7 +87,7 @@ export const RoadmapSection: React.FC = () => {
         {
           iconSrc:
             "https://cdn.builder.io/api/v1/image/assets/31c7b1c5a83a4753853375a2754b402c/76815c865f75a4cdc28d9c6207116248abf4b493?placeholderIfAbsent=true",
-          text: "Tham gia debate và cuộc thi hùng biện tiếng Anh",
+          text: "Tham gia debate và cu���c thi hùng biện tiếng Anh",
         },
         {
           iconSrc:
@@ -114,7 +114,7 @@ export const RoadmapSection: React.FC = () => {
         {
           iconSrc:
             "https://cdn.builder.io/api/v1/image/assets/31c7b1c5a83a4753853375a2754b402c/924a98ac0a94d612a471a0433f192c6df415fdda?placeholderIfAbsent=true",
-          text: "Tự tin tham gia c��c hoạt động Model UN và Youth Leadership",
+          text: "Tự tin tham gia các hoạt động Model UN và Youth Leadership",
         },
         {
           iconSrc:
@@ -331,7 +331,7 @@ export const RoadmapSection: React.FC = () => {
           </div>
         </header>
 
-        <main className="flex flex-col justify-center px-10 mt-6 w-full max-md:px-5 max-md:max-w-full">
+        <main className="flex flex-col justify-center mt-6 w-full">
           <div className="flex flex-wrap gap-3 w-full text-xs font-bold leading-4 text-blue-900 max-md:max-w-full">
             {levelData.map((level, index) => (
               <LevelCard
