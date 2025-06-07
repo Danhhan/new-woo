@@ -67,19 +67,19 @@ export const TeenStudyTips: React.FC = () => {
           <div
             key={index}
             className={`
-							p-4 bg-gradient-to-br ${tip.color} rounded-lg border border-white/50
+							p-3 sm:p-4 bg-gradient-to-br ${tip.color} rounded-lg border border-white/50
 							hover:shadow-md transition-all duration-300 hover:-translate-y-1 group
 							animate-scaleIn
 						`}
             style={{ animationDelay: `${index * 0.1}s` }}
           >
-            <div className="text-2xl mb-2 group-hover:scale-110 transition-transform duration-300">
+            <div className="text-xl sm:text-2xl mb-2 group-hover:scale-110 transition-transform duration-300">
               {tip.icon}
             </div>
-            <h4 className="font-bold text-slate-800 mb-2 group-hover:text-purple-600 transition-colors duration-300">
+            <h4 className="text-sm sm:text-base font-bold text-slate-800 mb-2 group-hover:text-purple-600 transition-colors duration-300">
               {tip.title}
             </h4>
-            <p className="text-sm text-slate-600 leading-relaxed">
+            <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
               {tip.description}
             </p>
           </div>
