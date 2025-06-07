@@ -332,7 +332,7 @@ export const RoadmapSection: React.FC = () => {
         </header>
 
         <main className="flex flex-col justify-center mt-6 w-full">
-          <div className="flex flex-wrap gap-3 w-full text-xs font-bold leading-4 text-blue-900 max-md:max-w-full">
+          <div className="flex flex-wrap gap-3 w-full text-xs font-bold leading-4 text-blue-900">
             {levelData.map((level, index) => (
               <LevelCard
                 key={index}
