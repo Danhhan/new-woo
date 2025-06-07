@@ -27,21 +27,21 @@ export const TeenCTA: React.FC = () => {
           </button>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-sm">
-          <div className="flex flex-col items-center p-4 bg-white/10 backdrop-blur-sm rounded-lg">
-            <div className="text-2xl mb-2">⚡</div>
-            <div className="font-semibold">Lịch học linh hoạt</div>
-            <div className="opacity-80">Phù hợp lịch trường</div>
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4 text-xs sm:text-sm">
+          <div className="flex flex-col items-center p-3 sm:p-4 bg-white/10 backdrop-blur-sm rounded-lg">
+            <div className="text-xl sm:text-2xl mb-2">⚡</div>
+            <div className="font-semibold text-center">Lịch học linh hoạt</div>
+            <div className="opacity-80 text-center">Phù hợp lịch trường</div>
           </div>
-          <div className="flex flex-col items-center p-4 bg-white/10 backdrop-blur-sm rounded-lg">
-            <div className="text-2xl mb-2">🎯</div>
-            <div className="font-semibold">1 kèm 1 cá nhân hóa</div>
-            <div className="opacity-80">Tập trung 100%</div>
+          <div className="flex flex-col items-center p-3 sm:p-4 bg-white/10 backdrop-blur-sm rounded-lg">
+            <div className="text-xl sm:text-2xl mb-2">🎯</div>
+            <div className="font-semibold text-center">1 kèm 1 cá nhân hóa</div>
+            <div className="opacity-80 text-center">Tập trung 100%</div>
           </div>
-          <div className="flex flex-col items-center p-4 bg-white/10 backdrop-blur-sm rounded-lg">
-            <div className="text-2xl mb-2">🏆</div>
-            <div className="font-semibold">Cam kết đầu ra</div>
-            <div className="opacity-80">Hoàn tiền 100%</div>
+          <div className="flex flex-col items-center p-3 sm:p-4 bg-white/10 backdrop-blur-sm rounded-lg">
+            <div className="text-xl sm:text-2xl mb-2">🏆</div>
+            <div className="font-semibold text-center">Cam kết đầu ra</div>
+            <div className="opacity-80 text-center">Hoàn tiền 100%</div>
           </div>
         </div>
 
