@@ -315,14 +315,14 @@ export const RoadmapSection: React.FC = () => {
           </div>
           <div className="flex gap-3.5 items-center self-stretch my-auto">
             <div className="flex gap-2.5 items-center self-stretch my-auto">
-              <div className="flex overflow-hidden flex-col justify-center items-center self-stretch pr-2 pl-2 my-auto bg-gradient-to-br from-yellow-400 to-orange-400 h-[58px] min-h-[58px] rounded-full w-[58px] shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <div className="flex overflow-hidden flex-col justify-center items-center self-stretch pr-2 pl-2 my-auto bg-gradient-to-br from-yellow-400 to-orange-400 h-[48px] sm:h-[58px] min-h-[48px] sm:min-h-[58px] rounded-full w-[48px] sm:w-[58px] shadow-lg hover:shadow-xl transition-shadow duration-300">
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets/31c7b1c5a83a4753853375a2754b402c/7fe39650d3675ad48497574ab2254dab7be7286e?placeholderIfAbsent=true"
-                  className="object-contain aspect-[1.43] w-[43px]"
+                  className="object-contain aspect-[1.43] w-[35px] sm:w-[43px]"
                   alt=""
                 />
               </div>
-              <div className="self-stretch my-auto text-sm font-bold text-slate-700">
+              <div className="self-stretch my-auto text-xs sm:text-sm font-bold text-slate-700">
                 Wings of
                 <br />
                 <span className="text-indigo-600">Opportunity</span>
