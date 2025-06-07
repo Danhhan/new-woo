@@ -114,7 +114,7 @@ export const RoadmapSection: React.FC = () => {
         {
           iconSrc:
             "https://cdn.builder.io/api/v1/image/assets/31c7b1c5a83a4753853375a2754b402c/924a98ac0a94d612a471a0433f192c6df415fdda?placeholderIfAbsent=true",
-          text: "Tự tin tham gia các hoạt động Model UN và Youth Leadership",
+          text: "Tự tin tham gia c��c hoạt động Model UN và Youth Leadership",
         },
         {
           iconSrc:
@@ -291,7 +291,7 @@ export const RoadmapSection: React.FC = () => {
       />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <header className="flex flex-wrap justify-between items-center px-10 w-full max-md:px-5 max-md:max-w-full mb-8">
+        <header className="flex flex-wrap justify-between items-center w-full mb-8">
           <div className="flex-1 shrink self-stretch my-auto basis-0 min-w-60 max-md:max-w-full">
             <div className="flex flex-col items-start w-full max-md:max-w-full">
               <h1 className="text-4xl font-black bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 bg-clip-text text-transparent max-md:max-w-full max-md:text-3xl">
