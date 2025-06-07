@@ -297,7 +297,7 @@ export const RoadmapSection: React.FC = () => {
               <h1 className="text-4xl font-black bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 bg-clip-text text-transparent lg:text-4xl md:text-3xl sm:text-2xl text-xl">
                 LỘ TRÌNH HỌC DÀNH CHO TEENS
               </h1>
-              <p className="text-lg text-slate-600 font-medium mt-2 max-md:text-base">
+              <p className="lg:text-lg md:text-base sm:text-sm text-sm text-slate-600 font-medium mt-2">
                 🚀 Từ Zero đến Hero - Chinh phục tiếng Anh cùng thế hệ Gen Z!
               </p>
               <div className="flex gap-3 mt-4">
