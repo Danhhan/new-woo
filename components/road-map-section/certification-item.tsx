@@ -16,26 +16,24 @@ export const CertificationRow: React.FC<CertificationRowProps> = ({
   items,
 }) => {
   return (
-    <div className="flex flex-wrap gap-1 items-start w-full">
-      <div className="text-sm text-sky-900 w-[69px]">{label}</div>
-      <div className="flex flex-col flex-1 shrink justify-center text-xs text-center text-blue-900 basis-0 min-w-60">
-        <div className="flex flex-col justify-center w-full">
-          <div className="flex flex-wrap gap-2 items-start w-full">
-            {items.map((item, index) => (
-              <div
-                key={index}
-                className="overflow-hidden flex-1 shrink px-1 pt-1 pb-2 bg-cyan-400 rounded-md basis-0 border-neutral-800 shadow-[3px_3px_0px_rgba(34,34,34,1)]"
-              >
-                <div className="overflow-hidden gap-1.5 self-stretch px-3.5 py-1.5 w-full bg-white rounded-md border-neutral-800 shadow-[1px_1px_0px_rgba(34,34,34,1)]">
-                  {item.fontSize ? (
-                    <span style={{ fontSize: item.fontSize }}>{item.text}</span>
-                  ) : (
-                    item.text
-                  )}
-                </div>
+    <div className="space-y-2">
+      <div className="text-sm text-sky-900 px-2 sm:px-0">{label}</div>
+      <div className="px-2 sm:px-0">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-1.5 sm:gap-2 text-xs text-center text-blue-900">
+          {items.map((item, index) => (
+            <div
+              key={index}
+              className="overflow-hidden px-1 pt-1 pb-2 bg-cyan-400 rounded-md border-neutral-800 shadow-[3px_3px_0px_rgba(34,34,34,1)]"
+            >
+              <div className="overflow-hidden gap-1.5 px-1.5 sm:px-2 py-1.5 w-full bg-white rounded-md border-neutral-800 shadow-[1px_1px_0px_rgba(34,34,34,1)] text-[10px] sm:text-xs">
+                {item.fontSize ? (
+                  <span style={{ fontSize: item.fontSize }}>{item.text}</span>
+                ) : (
+                  item.text
+                )}
               </div>
-            ))}
-          </div>
+            </div>
+          ))}
         </div>
       </div>
     </div>
